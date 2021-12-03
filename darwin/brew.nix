@@ -8,13 +8,13 @@
     global.noLock = true;
 
     brews = [
-      "gptfdisk"
-      "docker-compose"
-      "k9s"
       "awscurl"
-      "doctl"
-      "clang-format"
-      # "awscli"
+      "docker-compose"
+      "gptfdisk"
+      "k9s"
+      "kafka"
+      "postgresql"
+      "zookeeper"
     ];
     # extraConfig = ''
     #     cask_args appdir: "~/BrewApplications", require_sha: true
@@ -26,6 +26,7 @@
     ];
     taps = [
       "homebrew/cask"
+      "homebrew/services"
       "conduktor/brew"
     ];
   };
