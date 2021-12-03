@@ -19,9 +19,13 @@
     oh-my-zsh = {
       enable = true;
       plugins = [
-        # "git"
-        # "common-aliases"
+        "docker"
+        "common-aliases"
+        "git"
+        "history"
         "per-directory-history"
+        "sudo"
+        "z"
       ];
     };
     initExtra = ''
@@ -35,7 +39,6 @@
         eval "$(/opt/homebrew/bin/brew shellenv)"
       fi
 
-      export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
       export JAVA_HOME="${pkgs.jdk11}"
     '';
   };

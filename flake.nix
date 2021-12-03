@@ -4,7 +4,7 @@
     hotPot = {
       url = "github:shopstic/nix-hot-pot";
     };
-    
+
     nixpkgs.follows = "hotPot/nixpkgs";
 
     darwin = {
@@ -82,58 +82,10 @@
     in
     {
       darwinConfigurations = {
-        studio-1 = darwin.lib.darwinSystem
-          {
-            system = "aarch64-darwin";
-            modules = nixDarwinCommonModules { hostName = "studio-1"; user = "studio"; buildCores = 18; } ++ [{
-              homebrew = {
-                brewPrefix = "/opt/homebrew/bin";
-              };
-            }];
-            specialArgs = {
-              inherit inputs nixpkgs;
-            };
-          };
-        studio-2 = darwin.lib.darwinSystem
-          {
-            system = "aarch64-darwin";
-            modules = nixDarwinCommonModules { hostName = "studio-2"; user = "studio"; buildCores = 20; } ++ [{
-              homebrew = {
-                brewPrefix = "/opt/homebrew/bin";
-              };
-            }];
-            specialArgs = {
-              inherit inputs nixpkgs;
-            };
-          };
-        studio-3 = darwin.lib.darwinSystem
-          {
-            system = "aarch64-darwin";
-            modules = nixDarwinCommonModules { hostName = "studio-3"; user = "studio"; } ++ [{
-              homebrew = {
-                brewPrefix = "/opt/homebrew/bin";
-              };
-            }];
-            specialArgs = {
-              inherit inputs nixpkgs;
-            };
-          };
         mbp = darwin.lib.darwinSystem
           {
             system = "aarch64-darwin";
-            modules = nixDarwinCommonModules { hostName = "jacky-mbp"; user = "nktpro"; } ++ [{
-              homebrew = {
-                brewPrefix = "/opt/homebrew/bin";
-              };
-            }];
-            specialArgs = {
-              inherit inputs nixpkgs;
-            };
-          };
-        m1-mini = darwin.lib.darwinSystem
-          {
-            system = "aarch64-darwin";
-            modules = nixDarwinCommonModules { hostName = "m1-mini"; user = "nktpro"; } ++ [{
+            modules = nixDarwinCommonModules { hostName = "pawel-mbp"; user = "pawel"; } ++ [{
               homebrew = {
                 brewPrefix = "/opt/homebrew/bin";
               };
