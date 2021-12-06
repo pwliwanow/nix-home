@@ -24,35 +24,30 @@ in
         };
         inherit sponge;
         inherit (pkgs)
-          regclient
-          manifest-tool
-          rnix-lsp
-          nixpkgs-fmt
-          nix-linter
-          k9s
-          kubectl
-          kubectx
-          stern
-          rsync
-          gnused
           awscli2
+          coreutils
+          gh
+          gnupg
+          gnused
           iperf2
           iperf3
           inetutils
-          gh
-          gnupg
-          watch
-          coreutils
-          tree
           jdk11
-          wget
-          nodejs-16_x
-          yarn
-          skopeo
-          dive
-          terraform
           jq
-          amazon-ecr-credential-helper
+          k9s
+          kubectl
+          kubectx
+          manifest-tool
+          nix-linter
+          nixpkgs-fmt
+          ripgrep
+          rnix-lsp
+          rsync
+          stern
+          terraform
+          tree
+          watch
+          wget
           ;
       };
   };
