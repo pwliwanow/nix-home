@@ -25,6 +25,7 @@ in
         inherit sponge;
         inherit (pkgs)
           awscli2
+          bat
           coreutils
           gh
           gnupg
