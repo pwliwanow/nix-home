@@ -27,6 +27,7 @@ in
           awscli2
           bat
           coreutils
+          deno
           gh
           gnupg
           gnused
