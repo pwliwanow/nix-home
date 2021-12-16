@@ -13,6 +13,7 @@
       "gptfdisk"
       "k9s"
       "kafka"
+      "npm"
       "postgresql"
       "zookeeper"
     ];
