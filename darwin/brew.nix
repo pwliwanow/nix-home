@@ -15,6 +15,7 @@
       "kafka"
       "npm"
       "postgresql"
+      "yarn"
       "zookeeper"
     ];
     # extraConfig = ''
