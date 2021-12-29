@@ -32,7 +32,9 @@
       if [[ -f "$HOME/.config/p10k/.p10k.zsh" ]]; then
         source "$HOME/.config/p10k/.p10k.zsh"
       fi
-      
+
+      export EDITOR="vim"
+
       alias watchk8s="watch -n1 'timeout 10 kubectl get events -A --sort-by=.metadata.creationTimestamp | tac'"
 
       enable-sudo-touchid() {

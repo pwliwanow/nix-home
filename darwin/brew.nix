@@ -11,7 +11,6 @@
       "awscurl"
       "docker-compose"
       "gptfdisk"
-      "k9s"
       "kafka"
       "npm"
       "postgresql"

@@ -48,6 +48,7 @@ in
           stern
           terraform
           tree
+          vim
           watch
           wget
           ;
