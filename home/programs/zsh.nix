@@ -34,6 +34,7 @@
       fi
 
       export EDITOR="vim"
+      export GOPATH="$HOME/Developer/go"
 
       alias watchk8s="watch -n1 'timeout 10 kubectl get events -A --sort-by=.metadata.creationTimestamp | tac'"
 

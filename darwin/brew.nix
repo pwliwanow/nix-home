@@ -8,8 +8,10 @@
     global.noLock = true;
 
     brews = [
+      "ammonite-repl"
       "awscurl"
       "docker-compose"
+      "go"
       "gptfdisk"
       "kafka"
       "npm"
