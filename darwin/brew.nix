@@ -15,6 +15,7 @@
       "gptfdisk"
       "kafka"
       "npm"
+      "multipass"
       "postgresql"
       "yarn"
       "zookeeper"
