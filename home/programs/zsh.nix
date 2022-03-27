@@ -38,6 +38,7 @@
       fi
 
       export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
+      export JAVA_HOME="${pkgs.jdk11}"
     '';
   };
 }

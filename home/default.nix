@@ -43,6 +43,12 @@ in
           watch
           coreutils
           tree
+          jdk11
+          wget
+          nodejs-16_x
+          yarn
+          skopeo
+          dive
           ;
       };
   };

@@ -42,6 +42,9 @@
                 inherit (hotPot.packages.${system})
                   manifest-tool
                   ;
+                  scala = prev.scala.override {
+                    jre = prev.jdk8;
+                  };
               }
           )
         ];

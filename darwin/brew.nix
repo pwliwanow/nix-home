@@ -11,6 +11,7 @@
       "gptfdisk"
       "docker-compose"
       "k9s"
+      "colima"
     ];
     # extraConfig = ''
     #     cask_args appdir: "~/BrewApplications", require_sha: true
