@@ -8,7 +8,7 @@
   # Nix configuration #
   #####################
   nix = {
-    package = pkgs.nix_2_4;
+    package = pkgs.nix;
     extraOptions = ''
       keep-outputs = true
       keep-derivations = true
@@ -42,9 +42,7 @@
   ########################
 
   # Fonts
-  fonts = {
-    enableFontDir = false;
-  };
+  fonts.fontDir.enable = true;
 
   networking = {
     dns = [

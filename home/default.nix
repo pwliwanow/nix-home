@@ -24,6 +24,7 @@ in
         };
         inherit sponge;
         inherit (pkgs)
+          regclient
           manifest-tool
           rnix-lsp
           nixpkgs-fmt

@@ -1,7 +1,7 @@
 {
   description = "Nix configuration";
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/7eb1a32324f039230261195ee8f913bfb4617f91";
 
     darwin = {
       url = "github:lnl7/nix-darwin";
@@ -20,8 +20,6 @@
 
     hotPot = {
       url = "github:shopstic/nix-hot-pot";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.flakeUtils.follows = "flakeUtils";
     };
   };
 
@@ -42,9 +40,10 @@
                 inherit (hotPot.packages.${system})
                   manifest-tool
                   ;
-                  scala = prev.scala.override {
-                    jre = prev.jdk8;
-                  };
+                regclient = hotPot.packages.${system}.regclient;
+                scala = prev.scala.override {
+                  jre = prev.jdk8;
+                };
               }
           )
         ];

@@ -12,6 +12,8 @@
       "docker-compose"
       "k9s"
       "colima"
+      "k3d"
+      "awscurl"
     ];
     # extraConfig = ''
     #     cask_args appdir: "~/BrewApplications", require_sha: true

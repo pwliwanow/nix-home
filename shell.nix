@@ -26,7 +26,7 @@ let
 
   darwinBuild = ''
     CONFIG=''${1?"Config name is required"}
-    ${pkgs.nix_2_4}/bin/nix build ".#darwinConfigurations.''${CONFIG}.system" \
+    ${pkgs.nix}/bin/nix build ".#darwinConfigurations.''${CONFIG}.system" \
       --experimental-features "flakes nix-command" --show-trace
   '';
 
