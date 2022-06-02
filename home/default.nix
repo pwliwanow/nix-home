@@ -42,6 +42,7 @@ in
           manifest-tool
           nix-linter
           nixpkgs-fmt
+          regctl
           ripgrep
           rnix-lsp
           rsync
