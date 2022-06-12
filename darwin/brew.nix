@@ -17,6 +17,7 @@
       "npm"
       "multipass"
       "postgresql"
+      "wrk"
       "yarn"
       "zookeeper"
     ];
