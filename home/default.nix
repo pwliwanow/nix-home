@@ -46,6 +46,7 @@ in
           ripgrep
           rnix-lsp
           rsync
+          sbt
           stern
           terraform
           tree
