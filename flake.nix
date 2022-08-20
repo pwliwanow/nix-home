@@ -95,6 +95,18 @@
               inherit inputs nixpkgs;
             };
           };
+        studio-3 = darwin.lib.darwinSystem
+          {
+            system = "aarch64-darwin";
+            modules = nixDarwinCommonModules { hostName = "studio-3"; user = "studio"; } ++ [{
+              homebrew = {
+                brewPrefix = "/opt/homebrew/bin";
+              };
+            }];
+            specialArgs = {
+              inherit inputs nixpkgs;
+            };
+          };
         mbp = darwin.lib.darwinSystem
           {
             system = "aarch64-darwin";
