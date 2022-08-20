@@ -1,7 +1,7 @@
 {
   description = "Nix configuration";
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/7eb1a32324f039230261195ee8f913bfb4617f91";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-22.05";
 
     darwin = {
       url = "github:lnl7/nix-darwin";
@@ -9,7 +9,7 @@
     };
 
     home-manager = {
-      url = "github:nix-community/home-manager";
+      url = "github:nix-community/home-manager/release-22.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -39,8 +39,9 @@
               {
                 inherit (hotPot.packages.${system})
                   manifest-tool
+                  regclient
+                  awscli2
                   ;
-                regclient = hotPot.packages.${system}.regclient;
                 scala = prev.scala.override {
                   jre = prev.jdk8;
                 };
@@ -82,18 +83,14 @@
     in
     {
       darwinConfigurations = {
-        hackintosh = darwin.lib.darwinSystem
+        studio1 = darwin.lib.darwinSystem
           {
-            system = "x86_64-darwin";
-            modules = nixDarwinCommonModules { hostName = "jacky-oc"; user = "nktpro"; };
-            specialArgs = {
-              inherit inputs nixpkgs;
-            };
-          };
-        x86-mbp = darwin.lib.darwinSystem
-          {
-            system = "x86_64-darwin";
-            modules = nixDarwinCommonModules { hostName = "jacky-mbp-x86"; user = "nktpro"; maxJobs = 4; };
+            system = "aarch64-darwin";
+            modules = nixDarwinCommonModules { hostName = "studio-1"; user = "studio"; } ++ [{
+              homebrew = {
+                brewPrefix = "/opt/homebrew/bin";
+              };
+            }];
             specialArgs = {
               inherit inputs nixpkgs;
             };

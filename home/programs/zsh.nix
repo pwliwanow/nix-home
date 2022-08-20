@@ -4,9 +4,6 @@
     enable = true;
     enableAutosuggestions = true;
     enableSyntaxHighlighting = true;
-    history = {
-      path = ''$(if [[ -f "$PWD/.envrc" ]]; then echo "$PWD/.zsh_history"; else echo "$HOME/.zsh_history"; fi)'';
-    };
     plugins = [
       {
         name = "powerlevel10k";
@@ -20,10 +17,11 @@
       }
     ];
     oh-my-zsh = {
-      enable = false;
+      enable = true;
       plugins = [
-        "git"
-        "common-aliases"
+        # "git"
+        # "common-aliases"
+        "per-directory-history"
       ];
     };
     initExtra = ''
@@ -31,7 +29,7 @@
         source "$HOME/.config/p10k/.p10k.zsh"
       fi
       
-      alias watchk8s="watch -n1 'timeout 4 kubectl get events -A --sort-by=.metadata.creationTimestamp | tac'"
+      alias watchk8s="watch -n1 'timeout 10 kubectl get events -A --sort-by=.metadata.creationTimestamp | tac'"
 
       if [[ -f /opt/homebrew/bin/brew ]]; then
         eval "$(/opt/homebrew/bin/brew shellenv)"

@@ -14,6 +14,8 @@
       "colima"
       "k3d"
       "awscurl"
+      "doctl"
+      # "awscli"
     ];
     # extraConfig = ''
     #     cask_args appdir: "~/BrewApplications", require_sha: true
