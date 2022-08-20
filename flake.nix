@@ -83,7 +83,7 @@
     in
     {
       darwinConfigurations = {
-        studio1 = darwin.lib.darwinSystem
+        studio-1 = darwin.lib.darwinSystem
           {
             system = "aarch64-darwin";
             modules = nixDarwinCommonModules { hostName = "studio-1"; user = "studio"; } ++ [{
