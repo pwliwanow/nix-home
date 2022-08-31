@@ -86,7 +86,7 @@
         studio-1 = darwin.lib.darwinSystem
           {
             system = "aarch64-darwin";
-            modules = nixDarwinCommonModules { hostName = "studio-1"; user = "studio"; } ++ [{
+            modules = nixDarwinCommonModules { hostName = "studio-1"; user = "studio"; buildCores = 18; } ++ [{
               homebrew = {
                 brewPrefix = "/opt/homebrew/bin";
               };

@@ -11,7 +11,7 @@ in
     ./programs
   ];
 
-  fonts.fontconfig.enable = true;
+  fonts.fontconfig.enable = false;
 
   news.display = "silent";
 
@@ -50,6 +50,7 @@ in
           yarn
           skopeo
           dive
+          terraform
           ;
       };
   };
