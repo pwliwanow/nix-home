@@ -82,24 +82,6 @@
   programs.bash.enable = true;
 
   programs.nix-index.enable = true;
-  programs.nix-index.package = pkgs.nix-index-unwrapped.overrideAttrs
-    (attrs: rec {
-      version = "0.1.3";
-      name = "nix-index-${version}";
-
-      src = pkgs.fetchFromGitHub {
-        owner = "bennofs";
-        repo = "nix-index";
-        rev = "69f458004a95a609108b4c72da95b6c83d239a42";
-        sha256 = "sha256-kExZMd1uhnOFiSqgdPpxp1txo+8MkgnMaGPIiTCCIQk=";
-      };
-
-      cargoDeps = attrs.cargoDeps.overrideAttrs (lib.const {
-        name = "${name}-vendor.tar.gz";
-        inherit src;
-        outputHash = "sha256-GMY+IVNsJNvmQyAls3JF7Z9Bc92sNgNeMzzAN2yRKM8=";
-      });
-    });
 
   # Used for backwards compatibility, please read the changelog before changing.
   system.stateVersion = 4;

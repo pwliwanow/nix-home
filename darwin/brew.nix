@@ -11,10 +11,9 @@
       "gptfdisk"
       "docker-compose"
       "k9s"
-      "colima"
-      "k3d"
       "awscurl"
       "doctl"
+      "clang-format"
       # "awscli"
     ];
     # extraConfig = ''
@@ -23,6 +22,7 @@
     casks = [
       "conduktor"
       "multipass"
+      "google-cloud-sdk"
     ];
     taps = [
       "homebrew/cask"

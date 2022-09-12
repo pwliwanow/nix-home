@@ -51,6 +51,8 @@ in
           skopeo
           dive
           terraform
+          jq
+          amazon-ecr-credential-helper
           ;
       };
   };

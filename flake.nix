@@ -1,10 +1,14 @@
 {
   description = "Nix configuration";
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-22.05";
+    hotPot = {
+      url = "github:shopstic/nix-hot-pot";
+    };
+    
+    nixpkgs.follows = "hotPot/nixpkgs";
 
     darwin = {
-      url = "github:lnl7/nix-darwin";
+      url = "github:lnl7/nix-darwin/54a24f042f93c79f5679f133faddedec61955cf2";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -16,10 +20,6 @@
     flakeUtils = {
       url = "github:numtide/flake-utils";
       inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    hotPot = {
-      url = "github:shopstic/nix-hot-pot";
     };
   };
 
@@ -40,7 +40,6 @@
                 inherit (hotPot.packages.${system})
                   manifest-tool
                   regclient
-                  awscli2
                   ;
                 scala = prev.scala.override {
                   jre = prev.jdk8;
@@ -87,6 +86,18 @@
           {
             system = "aarch64-darwin";
             modules = nixDarwinCommonModules { hostName = "studio-1"; user = "studio"; buildCores = 18; } ++ [{
+              homebrew = {
+                brewPrefix = "/opt/homebrew/bin";
+              };
+            }];
+            specialArgs = {
+              inherit inputs nixpkgs;
+            };
+          };
+        studio-2 = darwin.lib.darwinSystem
+          {
+            system = "aarch64-darwin";
+            modules = nixDarwinCommonModules { hostName = "studio-2"; user = "studio"; buildCores = 20; } ++ [{
               homebrew = {
                 brewPrefix = "/opt/homebrew/bin";
               };
