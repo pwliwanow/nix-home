@@ -17,7 +17,6 @@
       "npm"
       "multipass"
       "postgresql"
-      "wrk"
       "yarn"
       "zookeeper"
     ];
@@ -31,7 +30,6 @@
     ];
     taps = [
       "homebrew/cask"
-      "homebrew/cask-versions"
       "homebrew/services"
       "conduktor/brew"
     ];

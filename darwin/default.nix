@@ -1,6 +1,5 @@
 { inputs, config, pkgs, lib, ... }:
 {
-  nixpkgs.config.allowBroken = true;
   imports = [
     ./brew.nix
   ];

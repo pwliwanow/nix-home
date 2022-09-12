@@ -27,7 +27,6 @@ in
           awscli2
           bat
           coreutils
-          deno
           gh
           gnupg
           gnused
@@ -42,7 +41,7 @@ in
           manifest-tool
           nix-linter
           nixpkgs-fmt
-          regctl
+          regclient
           ripgrep
           rnix-lsp
           rsync
