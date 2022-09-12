@@ -16,6 +16,7 @@
       builders = @/etc/nix/machines
       builders-use-substitutes = true
       trusted-users = root ${lib.concatStringsSep " " (builtins.attrNames config.users.users)}
+      narinfo-cache-negative-ttl = 0
     '';
     gc = {
       automatic = true;
