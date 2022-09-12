@@ -31,6 +31,7 @@
     ];
     taps = [
       "homebrew/cask"
+      "homebrew/cask-versions"
       "homebrew/services"
       "conduktor/brew"
     ];
