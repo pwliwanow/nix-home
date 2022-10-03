@@ -41,6 +41,7 @@ in
           manifest-tool
           nix-linter
           nixpkgs-fmt
+          qemu
           regclient
           ripgrep
           rnix-lsp
