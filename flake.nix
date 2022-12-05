@@ -8,12 +8,12 @@
     nixpkgs.follows = "hotPot/nixpkgs";
 
     darwin = {
-      url = "github:lnl7/nix-darwin/54a24f042f93c79f5679f133faddedec61955cf2";
+      url = "github:lnl7/nix-darwin/34c4a4cf9057d5eea84ba7320bbb742b54f129a5";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
     home-manager = {
-      url = "github:nix-community/home-manager/release-22.05";
+      url = "github:nix-community/home-manager/release-22.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -59,9 +59,9 @@
         home-manager.darwinModules.home-manager
         # misc configs
         {
-          nix = {
-            buildCores = buildCores;
-            maxJobs = maxJobs;
+          nix.settings = {
+            cores = buildCores;
+            max-jobs = maxJobs;
           };
           nixpkgs = nixpkgsConfig;
           # `home-manager` config

@@ -20,7 +20,7 @@
     '';
     gc = {
       automatic = true;
-      options = "--delete-older-than 30d";
+      options = "--delete-older-than 60d";
     };
     readOnlyStore = true;
     nixPath = [
@@ -28,14 +28,16 @@
       "home-manager=/etc/${config.environment.etc.home-manager.target}"
       "darwin=/etc/${config.environment.etc.darwin.target}"
     ];
-    binaryCaches = lib.mkForce [
-      "https://cache.nixos.org?priority=40"
-      "https://nix.shopstic.com?priority=60"
-    ];
-    binaryCachePublicKeys = lib.mkForce [
-      "nix-cache:jxOpK2dQOv/7JIb5/30+W4oidtUgmFMXLc/3mC09mKM="
-      "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
-    ];
+    settings = {
+      substituters = lib.mkForce [
+        "https://cache.nixos.org?priority=40"
+        "https://nix.shopstic.com?priority=60"
+      ];
+      trusted-public-keys = lib.mkForce [
+        "nix-cache:jxOpK2dQOv/7JIb5/30+W4oidtUgmFMXLc/3mC09mKM="
+        "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
+      ];
+    };
   };
 
   ########################

@@ -46,7 +46,7 @@ in
           tree
           jdk11
           wget
-          nodejs-16_x
+          nodejs-18_x
           yarn
           skopeo
           dive

@@ -2,15 +2,17 @@
 {
   homebrew = {
     enable = true;
-    autoUpdate = false;
-    cleanup = "zap";
+    onActivation = {
+      cleanup = "zap";
+      autoUpdate = false;
+      upgrade = true;
+    };
     global.brewfile = true;
-    global.noLock = true;
+    global.lockfiles = false;
 
     brews = [
       "gptfdisk"
       "docker-compose"
-      "k9s"
       "awscurl"
       "doctl"
       "clang-format"
@@ -22,7 +24,7 @@
     casks = [
       "conduktor"
       "multipass"
-      "google-cloud-sdk"
+      # "google-cloud-sdk"
     ];
     taps = [
       "homebrew/cask"
