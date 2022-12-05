@@ -53,6 +53,7 @@ in
           terraform
           jq
           amazon-ecr-credential-helper
+          openssl
           ;
       };
   };

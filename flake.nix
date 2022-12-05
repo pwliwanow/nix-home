@@ -4,7 +4,7 @@
     hotPot = {
       url = "github:shopstic/nix-hot-pot";
     };
-    
+
     nixpkgs.follows = "hotPot/nixpkgs";
 
     darwin = {
@@ -17,10 +17,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    flakeUtils = {
-      url = "github:numtide/flake-utils";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    flakeUtils.follows = "hotPot/flakeUtils";
   };
 
   outputs = inputs@{ self, nixpkgs, darwin, home-manager, flakeUtils, hotPot, ... }:
