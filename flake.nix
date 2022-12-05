@@ -37,10 +37,11 @@
                 inherit (hotPot.packages.${system})
                   manifest-tool
                   regclient
+                  kubesess
                   ;
-                scala = prev.scala.override {
-                  jre = prev.jdk8;
-                };
+                # scala = prev.scala.override {
+                #   jre = prev.jdk8;
+                # };
               }
           )
         ];

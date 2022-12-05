@@ -45,7 +45,7 @@
   ########################
 
   # Fonts
-  fonts.fontDir.enable = false;
+  fonts.fontDir.enable = true;
 
   networking = {
     dns = [

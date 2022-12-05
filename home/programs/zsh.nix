@@ -11,8 +11,8 @@
         src = pkgs.fetchFromGitHub {
           owner = "romkatv";
           repo = "powerlevel10k";
-          rev = "d281e595b3ddf2f5ccefb0cd7bfa475222566186";
-          sha256 = "BoGgeDg1CrNnbU2SFqisJPVgWecAFZ2ri/p7q5Ss5aA=";
+          rev = "v1.16.1";
+          sha256 = "sha256-DLiKH12oqaaVChRqY0Q5oxVjziZdW/PfnRW1fCSCbjo=";
         };
       }
     ];
@@ -37,6 +37,8 @@
 
       export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
       export JAVA_HOME="${pkgs.jdk11}"
+
+      source ${pkgs.kubesess}/shell-init/*
     '';
   };
 }

@@ -1,6 +1,6 @@
 { config, lib, pkgs, ... }:
 let
-  sponge = pkgs.runCommand "sponge-symlink" {} ''
+  sponge = pkgs.runCommand "sponge-symlink" { } ''
     mkdir -p $out/bin
     ln -s ${pkgs.moreutils}/bin/sponge $out/bin/sponge
   '';
@@ -11,7 +11,7 @@ in
     ./programs
   ];
 
-  fonts.fontconfig.enable = false;
+  fonts.fontconfig.enable = true;
 
   news.display = "silent";
 
@@ -24,6 +24,7 @@ in
         };
         inherit sponge;
         inherit (pkgs)
+          meslo-lgs-nf
           regclient
           manifest-tool
           rnix-lsp
@@ -32,6 +33,7 @@ in
           k9s
           kubectl
           kubectx
+          kubesess
           stern
           rsync
           gnused
@@ -54,6 +56,7 @@ in
           jq
           amazon-ecr-credential-helper
           openssl
+          scala
           ;
       };
   };
