@@ -27,6 +27,7 @@ in
           awscli2
           bat
           coreutils
+          etcd_3_5
           gh
           gnupg
           gnused
