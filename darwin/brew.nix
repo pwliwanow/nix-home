@@ -13,12 +13,9 @@
       "docker-compose"
       "go"
       "gptfdisk"
-      "kafka"
       "npm"
       "multipass"
-      "postgresql"
       "yarn"
-      "zookeeper"
     ];
     # extraConfig = ''
     #     cask_args appdir: "~/BrewApplications", require_sha: true
