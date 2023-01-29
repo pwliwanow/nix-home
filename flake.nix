@@ -38,6 +38,7 @@
                   manifest-tool
                   regclient
                   kubesess
+                  k9s
                   ;
                 # scala = prev.scala.override {
                 #   jre = prev.jdk8;
@@ -119,7 +120,7 @@
         mbp = darwin.lib.darwinSystem
           {
             system = "aarch64-darwin";
-            modules = nixDarwinCommonModules { hostName = "jacky-mbp"; user = "nktpro"; } ++ [{
+            modules = nixDarwinCommonModules { hostName = "jacky-mbp-m2"; user = "nktpro"; } ++ [{
               homebrew = {
                 brewPrefix = "/opt/homebrew/bin";
               };

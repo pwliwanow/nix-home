@@ -94,11 +94,11 @@
         "utils": "utils"
       },
       "locked": {
-        "lastModified": 1670156115,
-        "narHash": "sha256-L2FKLedprp3AkQ+GS+2Br7CYWeCmLCjt3zUd87p0lNQ=",
+        "lastModified": 1670253003,
+        "narHash": "sha256-/tJIy4+FbsQyslq1ipyicZ2psOEd8dvl4OJ9lfisjd0=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "e704ef9ec7a8ccf8711bb11ff68da06f1917a26d",
+        "rev": "0e8125916b420e41bf0d23a0aa33fadd0328beb3",
         "type": "github"
       },
       "original": {
@@ -117,11 +117,11 @@
         "npmlock2nixPkg": "npmlock2nixPkg"
       },
       "locked": {
-        "lastModified": 1670240150,
-        "narHash": "sha256-2qh+Y9wuoqmgqnXSQ2Wl5439oOt8Aj/8G6pQk1eEgbc=",
+        "lastModified": 1670692921,
+        "narHash": "sha256-APHR+s4sI8m6CBx2nueM/hijMmWA3ugZ5EIiF3hmjvo=",
         "owner": "shopstic",
         "repo": "nix-hot-pot",
-        "rev": "a936597117168b3f80889f42e5b9a43db98e0735",
+        "rev": "1a0911a6b90a7cd7fac46da1bd6a9a2e16c10235",
         "type": "github"
       },
       "original": {
@@ -187,17 +187,17 @@
     "npmlock2nixPkg": {
       "flake": false,
       "locked": {
-        "lastModified": 1654775747,
-        "narHash": "sha256-9pXHDpIjmsK5390wmpGHu9aA4QOPpegPBvThHeBlef4=",
+        "lastModified": 1670067743,
+        "narHash": "sha256-ZeWESHkSHpE9fVUQlxT9fojvgDiX77oEr6yN9qs5yAc=",
         "owner": "nix-community",
         "repo": "npmlock2nix",
-        "rev": "5c4f247688fc91d665df65f71c81e0726621aaa8",
+        "rev": "45faec611d6bfd5c63f3aaaeabe0b65f5a069407",
         "type": "github"
       },
       "original": {
         "owner": "nix-community",
         "repo": "npmlock2nix",
-        "rev": "5c4f247688fc91d665df65f71c81e0726621aaa8",
+        "rev": "45faec611d6bfd5c63f3aaaeabe0b65f5a069407",
         "type": "github"
       }
     },

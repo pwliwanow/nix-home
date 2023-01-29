@@ -16,6 +16,7 @@
       "awscurl"
       "doctl"
       "clang-format"
+      # "k9s"
       # "awscli"
     ];
     # extraConfig = ''

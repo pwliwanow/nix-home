@@ -38,7 +38,8 @@
       export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
       export JAVA_HOME="${pkgs.jdk11}"
 
-      source ${pkgs.kubesess}/shell-init/*
+      source ${pkgs.kubesess}/shell-init/kubesess.sh
+      source ${pkgs.kubesess}/shell-init/completion.sh
     '';
   };
 }
