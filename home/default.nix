@@ -29,7 +29,7 @@ in
           manifest-tool
           rnix-lsp
           nixpkgs-fmt
-          nix-linter
+          # nix-linter
           k9s
           kubectl
           kubectx

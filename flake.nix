@@ -8,7 +8,7 @@
     nixpkgs.follows = "hotPot/nixpkgs";
 
     darwin = {
-      url = "github:lnl7/nix-darwin/34c4a4cf9057d5eea84ba7320bbb742b54f129a5";
+      url = "github:lnl7/nix-darwin/87b9d090ad39b25b2400029c64825fc2a8868943";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -81,42 +81,6 @@
     in
     {
       darwinConfigurations = {
-        studio-1 = darwin.lib.darwinSystem
-          {
-            system = "aarch64-darwin";
-            modules = nixDarwinCommonModules { hostName = "studio-1"; user = "studio"; buildCores = 18; } ++ [{
-              homebrew = {
-                brewPrefix = "/opt/homebrew/bin";
-              };
-            }];
-            specialArgs = {
-              inherit inputs nixpkgs;
-            };
-          };
-        studio-2 = darwin.lib.darwinSystem
-          {
-            system = "aarch64-darwin";
-            modules = nixDarwinCommonModules { hostName = "studio-2"; user = "studio"; buildCores = 20; } ++ [{
-              homebrew = {
-                brewPrefix = "/opt/homebrew/bin";
-              };
-            }];
-            specialArgs = {
-              inherit inputs nixpkgs;
-            };
-          };
-        studio-3 = darwin.lib.darwinSystem
-          {
-            system = "aarch64-darwin";
-            modules = nixDarwinCommonModules { hostName = "studio-3"; user = "studio"; } ++ [{
-              homebrew = {
-                brewPrefix = "/opt/homebrew/bin";
-              };
-            }];
-            specialArgs = {
-              inherit inputs nixpkgs;
-            };
-          };
         mbp = darwin.lib.darwinSystem
           {
             system = "aarch64-darwin";
@@ -129,10 +93,10 @@
               inherit inputs nixpkgs;
             };
           };
-        m1-mini = darwin.lib.darwinSystem
+        m2-mini = darwin.lib.darwinSystem
           {
             system = "aarch64-darwin";
-            modules = nixDarwinCommonModules { hostName = "m1-mini"; user = "nktpro"; } ++ [{
+            modules = nixDarwinCommonModules { hostName = "m2-mini"; user = "nktpro"; } ++ [{
               homebrew = {
                 brewPrefix = "/opt/homebrew/bin";
               };
