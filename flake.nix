@@ -8,7 +8,7 @@
     nixpkgs.follows = "hotPot/nixpkgs";
 
     darwin = {
-      url = "github:lnl7/nix-darwin/252541bd05a7f55f3704a3d014ad1badc1e3360d";
+      url = "github:lnl7/nix-darwin/afe83cbc2e673b1f08d32dd0f70df599678ff1e7";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 

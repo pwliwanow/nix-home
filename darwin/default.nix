@@ -22,7 +22,7 @@
       automatic = true;
       options = "--delete-older-than 60d";
     };
-    readOnlyStore = true;
+    # readOnlyStore = true;
     nixPath = [
       "nixpkgs=/etc/${config.environment.etc.nixpkgs.target}"
       "home-manager=/etc/${config.environment.etc.home-manager.target}"
