@@ -16,7 +16,7 @@ in
   news.display = "silent";
 
   home = {
-    stateVersion = "21.11";
+    stateVersion = "23.05";
     packages = builtins.attrValues
       {
         visualvm = pkgs.visualvm.override {
@@ -57,6 +57,7 @@ in
           amazon-ecr-credential-helper
           openssl
           scala
+          pv
           ;
       };
   };

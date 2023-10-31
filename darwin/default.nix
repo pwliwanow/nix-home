@@ -8,7 +8,7 @@
   # Nix configuration #
   #####################
   nix = {
-    package = pkgs.nix;
+    package = pkgs.nixVersions.nix_2_17;
     extraOptions = ''
       keep-outputs = true
       keep-derivations = true

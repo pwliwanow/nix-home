@@ -8,12 +8,12 @@
     nixpkgs.follows = "hotPot/nixpkgs";
 
     darwin = {
-      url = "github:lnl7/nix-darwin/87b9d090ad39b25b2400029c64825fc2a8868943";
+      url = "github:lnl7/nix-darwin/252541bd05a7f55f3704a3d014ad1badc1e3360d";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
     home-manager = {
-      url = "github:nix-community/home-manager/release-22.11";
+      url = "github:nix-community/home-manager/release-23.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -39,6 +39,7 @@
                   regclient
                   kubesess
                   k9s
+                  dive
                   ;
                 # scala = prev.scala.override {
                 #   jre = prev.jdk8;
