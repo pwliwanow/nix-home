@@ -58,6 +58,9 @@ in
           openssl
           scala
           pv
+          deno
+          nix-prefetch
+          docker-credential-helpers
           ;
       };
   };

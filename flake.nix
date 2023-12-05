@@ -8,12 +8,12 @@
     nixpkgs.follows = "hotPot/nixpkgs";
 
     darwin = {
-      url = "github:lnl7/nix-darwin/afe83cbc2e673b1f08d32dd0f70df599678ff1e7";
+      url = "github:lnl7/nix-darwin/4b9b83d5a92e8c1fbfd8eb27eda375908c11ec4d";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
     home-manager = {
-      url = "github:nix-community/home-manager/release-23.05";
+      url = "github:nix-community/home-manager/release-23.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -40,6 +40,7 @@
                   kubesess
                   k9s
                   dive
+                  docker-credential-helpers
                   ;
                 # scala = prev.scala.override {
                 #   jre = prev.jdk8;
@@ -85,7 +86,7 @@
         mbp = darwin.lib.darwinSystem
           {
             system = "aarch64-darwin";
-            modules = nixDarwinCommonModules { hostName = "jacky-mbp-m2"; user = "nktpro"; } ++ [{
+            modules = nixDarwinCommonModules { hostName = "jacky-mbp-m3"; user = "nktpro"; buildCores = 12; } ++ [{
               homebrew = {
                 brewPrefix = "/opt/homebrew/bin";
               };

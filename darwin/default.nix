@@ -8,11 +8,12 @@
   # Nix configuration #
   #####################
   nix = {
-    package = pkgs.nixVersions.nix_2_17;
+    # gc.user = "nktpro";
+    package = pkgs.nix;
     extraOptions = ''
       keep-outputs = true
       keep-derivations = true
-      experimental-features = nix-command flakes
+      experimental-features = nix-command flakes repl-flake
       builders = @/etc/nix/machines
       builders-use-substitutes = true
       trusted-users = root ${lib.concatStringsSep " " (builtins.attrNames config.users.users)}

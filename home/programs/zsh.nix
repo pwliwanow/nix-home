@@ -3,7 +3,7 @@
   programs.zsh = {
     enable = true;
     enableAutosuggestions = true;
-    enableSyntaxHighlighting = true;
+    syntaxHighlighting.enable = true;
     plugins = [
       {
         name = "powerlevel10k";
