@@ -20,6 +20,7 @@
       narinfo-cache-negative-ttl = 0
     '';
     gc = {
+      user = "nktpro";
       automatic = true;
       options = "--delete-older-than 60d";
     };
