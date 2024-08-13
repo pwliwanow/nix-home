@@ -17,8 +17,8 @@
     git = {
       enable = true;
       lfs.enable = true;
-      userName = "Jacky Nguyen";
-      userEmail = "nktpro@gmail.com";
+      userName = "Pawel Iwanow";
+      userEmail = "7759586+pwliwanow@users.noreply.github.com";
       ignores = [
         ".DS_Store"
         ".AppleDouble"
@@ -63,7 +63,7 @@
         # commit.gpgsign = "true";
         # gpg.program = "gpg2";
         ui.color = "always";
-        github.user = "nktpro";
+        github.user = "pwliwanow";
         protocol.keybase.allow = "always";
         credential.helper = "osxkeychain";
         pull.rebase = "true";

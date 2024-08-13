@@ -8,7 +8,7 @@
   # Nix configuration #
   #####################
   nix = {
-    # gc.user = "nktpro";
+    # gc.user = "pawel";
     package = pkgs.nix;
     extraOptions = ''
       keep-outputs = true
@@ -20,7 +20,7 @@
       narinfo-cache-negative-ttl = 0
     '';
     gc = {
-      # user = "nktpro";
+      # user = "pawel";
       automatic = true;
       options = "--delete-older-than 60d";
     };
@@ -87,5 +87,5 @@
 
   # Used for backwards compatibility, please read the changelog before changing.
   system.stateVersion = 6;
-  system.primaryUser = "nktpro";
+  system.primaryUser = "pawel";
 }
