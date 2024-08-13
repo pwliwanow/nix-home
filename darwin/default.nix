@@ -8,7 +8,6 @@
   # Nix configuration #
   #####################
   nix = {
-    # gc.user = "nktpro";
     package = pkgs.nix;
     extraOptions = ''
       keep-outputs = true
@@ -20,7 +19,7 @@
       narinfo-cache-negative-ttl = 0
     '';
     gc = {
-      user = "nktpro";
+      user = "pawel";
       automatic = true;
       options = "--delete-older-than 60d";
     };

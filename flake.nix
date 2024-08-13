@@ -84,46 +84,10 @@
     in
     {
       darwinConfigurations = {
-        mbp-m3 = darwin.lib.darwinSystem
+        mbp = darwin.lib.darwinSystem
           {
             system = "aarch64-darwin";
-            modules = nixDarwinCommonModules { hostName = "jacky-mbp-m3"; user = "nktpro"; buildCores = 12; } ++ [{
-              homebrew = {
-                brewPrefix = "/opt/homebrew/bin";
-              };
-            }];
-            specialArgs = {
-              inherit inputs nixpkgs;
-            };
-          };
-        mba-m3 = darwin.lib.darwinSystem
-          {
-            system = "aarch64-darwin";
-            modules = nixDarwinCommonModules { hostName = "jacky-mba-m3"; user = "nktpro"; buildCores = 6; } ++ [{
-              homebrew = {
-                brewPrefix = "/opt/homebrew/bin";
-              };
-            }];
-            specialArgs = {
-              inherit inputs nixpkgs;
-            };
-          };
-        mbp-m2 = darwin.lib.darwinSystem
-          {
-            system = "aarch64-darwin";
-            modules = nixDarwinCommonModules { hostName = "jacky-mbp-m2"; user = "nktpro"; buildCores = 8; } ++ [{
-              homebrew = {
-                brewPrefix = "/opt/homebrew/bin";
-              };
-            }];
-            specialArgs = {
-              inherit inputs nixpkgs;
-            };
-          };
-        m2-mini = darwin.lib.darwinSystem
-          {
-            system = "aarch64-darwin";
-            modules = nixDarwinCommonModules { hostName = "m2-mini"; user = "nktpro"; } ++ [{
+            modules = nixDarwinCommonModules { hostName = "pawel-mbp"; user = "pawel"; buildCores = 8; } ++ [{
               homebrew = {
                 brewPrefix = "/opt/homebrew/bin";
               };
