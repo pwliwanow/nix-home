@@ -27,7 +27,7 @@ in
           meslo-lgs-nf
           regclient
           manifest-tool
-          rnix-lsp
+          # rnix-lsp
           nixpkgs-fmt
           # nix-linter
           k9s
@@ -48,7 +48,7 @@ in
           tree
           jdk11
           wget
-          nodejs-18_x
+          nodejs_20
           yarn
           skopeo
           dive
@@ -61,6 +61,7 @@ in
           deno
           nix-prefetch
           docker-credential-helpers
+          rclone
           ;
       };
   };

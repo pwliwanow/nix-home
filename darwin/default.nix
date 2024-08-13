@@ -34,9 +34,11 @@
       substituters = lib.mkForce [
         "https://cache.nixos.org?priority=40"
         "https://nix.shopstic.com?priority=60"
+        # "https://nix.wok.run/cache?priority=80"
       ];
       trusted-public-keys = lib.mkForce [
         "nix-cache:jxOpK2dQOv/7JIb5/30+W4oidtUgmFMXLc/3mC09mKM="
+        # "nix.wok.run:jxOpK2dQOv/7JIb5/30+W4oidtUgmFMXLc/3mC09mKM="
         "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
       ];
     };
@@ -47,8 +49,6 @@
   ########################
 
   # Fonts
-  fonts.fontDir.enable = true;
-
   networking = {
     dns = [
       "1.1.1.1"

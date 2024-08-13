@@ -8,12 +8,12 @@
     nixpkgs.follows = "hotPot/nixpkgs";
 
     darwin = {
-      url = "github:lnl7/nix-darwin/4b9b83d5a92e8c1fbfd8eb27eda375908c11ec4d";
+      url = "github:lnl7/nix-darwin/0413754b3cdb879ba14f6e96915e5fdf06c6aab6";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
     home-manager = {
-      url = "github:nix-community/home-manager/release-23.11";
+      url = "github:nix-community/home-manager/release-24.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -41,6 +41,7 @@
                   k9s
                   dive
                   docker-credential-helpers
+                  deno
                   ;
                 # scala = prev.scala.override {
                 #   jre = prev.jdk8;
