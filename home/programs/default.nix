@@ -46,8 +46,8 @@
       ];
       settings = {
         user = {
-          name = "Jacky Nguyen";
-          email = "nktpro@gmail.com";
+          name = "Pawel Iwanow";
+          email = "7759586+pwliwanow@users.noreply.github.com";
         };
         alias = {
           co = "checkout";
@@ -63,7 +63,7 @@
         # commit.gpgsign = "true";
         # gpg.program = "gpg2";
         ui.color = "always";
-        github.user = "nktpro";
+        github.user = "pwliwanow";
         protocol.keybase.allow = "always";
         credential.helper = "osxkeychain";
         pull.rebase = "true";
