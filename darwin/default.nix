@@ -88,5 +88,5 @@
 
   # Used for backwards compatibility, please read the changelog before changing.
   system.stateVersion = 6;
-  system.primaryUser = "nktpro";
+  system.primaryUser = "pawel";
 }
