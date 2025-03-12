@@ -8,12 +8,12 @@
     nixpkgs.follows = "hotPot/nixpkgs";
 
     darwin = {
-      url = "github:lnl7/nix-darwin/0413754b3cdb879ba14f6e96915e5fdf06c6aab6";
+      url = "github:lnl7/nix-darwin/e30a3622b606dffc622305b4bbe1cfe37e78fa40";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
     home-manager = {
-      url = "github:nix-community/home-manager/release-24.05";
+      url = "github:nix-community/home-manager/release-24.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -84,34 +84,22 @@
     in
     {
       darwinConfigurations = {
+        mbp-m4 = darwin.lib.darwinSystem
+          {
+            system = "aarch64-darwin";
+            modules = nixDarwinCommonModules { hostName = "jacky-mbp-m4"; user = "nktpro"; buildCores = 12; } ++ [{
+              homebrew = {
+                brewPrefix = "/opt/homebrew/bin";
+              };
+            }];
+            specialArgs = {
+              inherit inputs nixpkgs;
+            };
+          };
         mbp-m3 = darwin.lib.darwinSystem
           {
             system = "aarch64-darwin";
             modules = nixDarwinCommonModules { hostName = "jacky-mbp-m3"; user = "nktpro"; buildCores = 12; } ++ [{
-              homebrew = {
-                brewPrefix = "/opt/homebrew/bin";
-              };
-            }];
-            specialArgs = {
-              inherit inputs nixpkgs;
-            };
-          };
-        mba-m3 = darwin.lib.darwinSystem
-          {
-            system = "aarch64-darwin";
-            modules = nixDarwinCommonModules { hostName = "jacky-mba-m3"; user = "nktpro"; buildCores = 6; } ++ [{
-              homebrew = {
-                brewPrefix = "/opt/homebrew/bin";
-              };
-            }];
-            specialArgs = {
-              inherit inputs nixpkgs;
-            };
-          };
-        mbp-m2 = darwin.lib.darwinSystem
-          {
-            system = "aarch64-darwin";
-            modules = nixDarwinCommonModules { hostName = "jacky-mbp-m2"; user = "nktpro"; buildCores = 8; } ++ [{
               homebrew = {
                 brewPrefix = "/opt/homebrew/bin";
               };

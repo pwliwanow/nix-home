@@ -40,6 +40,9 @@
 
       source ${pkgs.kubesess}/shell-init/kubesess.sh
       source ${pkgs.kubesess}/shell-init/completion.sh
+      unset HISTFILE
+
+      alias kubectx="kcd"
     '';
   };
 }

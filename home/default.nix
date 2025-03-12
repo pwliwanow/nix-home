@@ -32,7 +32,7 @@ in
           # nix-linter
           k9s
           kubectl
-          kubectx
+          # kubectx
           kubesess
           stern
           rsync

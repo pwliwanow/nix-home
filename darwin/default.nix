@@ -13,7 +13,7 @@
     extraOptions = ''
       keep-outputs = true
       keep-derivations = true
-      experimental-features = nix-command flakes repl-flake
+      experimental-features = nix-command flakes
       builders = @/etc/nix/machines
       builders-use-substitutes = true
       trusted-users = root ${lib.concatStringsSep " " (builtins.attrNames config.users.users)}
@@ -48,11 +48,10 @@
   # System configuration #
   ########################
 
-  # Fonts
   networking = {
     dns = [
-      "1.1.1.1"
-      "8.8.8.8"
+      # "1.1.1.1"
+      # "8.8.8.8"
     ];
   };
 
