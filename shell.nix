@@ -34,7 +34,7 @@ let
     ${systemSetup}
     ${darwinBuild}
     CONFIG=''${1?"Config name is required"}
-    ./result/sw/bin/darwin-rebuild switch --flake ".#''${CONFIG}"
+    sudo ./result/sw/bin/darwin-rebuild switch --flake ".#''${CONFIG}"
   '';
 
   darwinTest = pkgs.writeShellScriptBin "darwinTest" ''

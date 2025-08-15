@@ -24,7 +24,7 @@
         "per-directory-history"
       ];
     };
-    initExtra = ''
+    initContent = ''
       if [[ -f "$HOME/.config/p10k/.p10k.zsh" ]]; then
         source "$HOME/.config/p10k/.p10k.zsh"
       fi

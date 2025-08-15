@@ -13,14 +13,14 @@
     extraOptions = ''
       keep-outputs = true
       keep-derivations = true
-      experimental-features = nix-command flakes
+      experimental-features = nix-command flakes ca-derivations
       builders = @/etc/nix/machines
       builders-use-substitutes = true
       trusted-users = root ${lib.concatStringsSep " " (builtins.attrNames config.users.users)}
       narinfo-cache-negative-ttl = 0
     '';
     gc = {
-      user = "nktpro";
+      # user = "nktpro";
       automatic = true;
       options = "--delete-older-than 60d";
     };
@@ -55,7 +55,7 @@
     ];
   };
 
-  services.nix-daemon.enable = true;
+  # services.nix-daemon.enable = true;
 
   ################
   # environment #
@@ -88,5 +88,6 @@
   programs.nix-index.enable = true;
 
   # Used for backwards compatibility, please read the changelog before changing.
-  system.stateVersion = 4;
+  system.stateVersion = 6;
+  system.primaryUser = "nktpro";
 }
