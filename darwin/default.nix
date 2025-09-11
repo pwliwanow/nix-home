@@ -5,6 +5,8 @@
     ./nix-daemon-env.nix
   ];
 
+  ids.gids.nixbld = 30000;
+
   #####################
   # Nix configuration #
   #####################
