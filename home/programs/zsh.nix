@@ -26,7 +26,12 @@
     };
     initContent = ''
       if [[ -f "$HOME/.config/p10k/.p10k.zsh" ]]; then
-        source "$HOME/.config/p10k/.p10k.zsh"
+        if [[ "$COMPOSER_NO_INTERACTION" == "1" ]]; then
+          export POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
+          powerlevel10k_plugin_unload
+        else
+          source "$HOME/.config/p10k/.p10k.zsh"
+        fi
       fi
       
       alias watchk8s="watch -n1 'timeout 10 kubectl get events -A --sort-by=.metadata.creationTimestamp | tac'"
