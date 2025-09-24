@@ -65,15 +65,17 @@
         "flakeUtils": "flakeUtils",
         "nix2containerPkg": "nix2containerPkg",
         "nixpkgs": "nixpkgs",
+        "nixpkgsUnstable": "nixpkgsUnstable",
+        "nixpkgsUnstablePrior": "nixpkgsUnstablePrior",
         "npmlock2nixPkg": "npmlock2nixPkg",
         "rustOverlay": "rustOverlay"
       },
       "locked": {
-        "lastModified": 1758655559,
-        "narHash": "sha256-faPoGrnIsQrt9O01ZqNG5ZoavFZLpK4eXMuFGoK593M=",
+        "lastModified": 1758739598,
+        "narHash": "sha256-ZluFO4k5ZVw/1RvpUxAuC3tzthVgbltEa7yUnvVj5UM=",
         "ref": "main",
-        "rev": "4692390bdec0398bf9173a20ffe9a9bb3d16783b",
-        "revCount": 693,
+        "rev": "afe67c9765f23f1ae1bf26843a0ab7020bba6402",
+        "revCount": 712,
         "type": "git",
         "url": "ssh://git@github.com/hefomo/nix-hot-pot"
       },
@@ -117,6 +119,38 @@
         "owner": "nixos",
         "ref": "nixos-25.05",
         "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgsUnstable": {
+      "locked": {
+        "lastModified": 1757341377,
+        "narHash": "sha256-Jvt/jfKsE/lFYgx1Zo1Q/c+ysjOtGj0YaDKLcE9ORrs=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "b5d3a07d593c821c264bb6738ac933e9fd7486ea",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "b5d3a07d593c821c264bb6738ac933e9fd7486ea",
+        "type": "github"
+      }
+    },
+    "nixpkgsUnstablePrior": {
+      "locked": {
+        "lastModified": 1751980785,
+        "narHash": "sha256-VOMUZLTnxygkbZ4evycoZiLR/dG4o1uJq/xN52ZhSmE=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "47754b692045206b960d62b04e730d78562db7a5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "47754b692045206b960d62b04e730d78562db7a5",
         "type": "github"
       }
     },
