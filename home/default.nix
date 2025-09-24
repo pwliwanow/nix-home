@@ -62,6 +62,7 @@ in
           nix-prefetch
           docker-credential-helpers
           rclone
+          ffmpeg
           ;
       };
   };

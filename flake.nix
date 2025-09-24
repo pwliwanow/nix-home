@@ -2,7 +2,7 @@
   description = "Nix configuration";
   inputs = {
     hotPot = {
-      url = "github:shopstic/nix-hot-pot";
+      url = "git+ssh://git@github.com/hefomo/nix-hot-pot?ref=main";
     };
 
     nixpkgs.follows = "hotPot/nixpkgs";
