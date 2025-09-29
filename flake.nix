@@ -42,6 +42,9 @@
                   dive
                   docker-credential-helpers
                   deno
+                  claude-code
+                  codex
+                  gemini-cli
                   ;
                 # scala = prev.scala.override {
                 #   jre = prev.jdk8;

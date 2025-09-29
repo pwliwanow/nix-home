@@ -63,6 +63,9 @@ in
           docker-credential-helpers
           rclone
           ffmpeg
+          claude-code
+          codex
+          gemini-cli
           ;
       };
   };
