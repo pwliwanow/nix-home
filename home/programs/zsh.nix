@@ -18,15 +18,15 @@
     ];
     oh-my-zsh = {
       enable = true;
-      plugins = [
-        # "git"
-        # "common-aliases"
-        "per-directory-history"
-      ];
+      extraConfig = ''
+        if [[ "$COMPOSER_NO_INTERACTION" != "1" && "$CURSOR_AGENT" != "1" ]]; then
+          plugins=(per-directory-history)
+        fi
+      '';
     };
     initContent = ''
       if [[ -f "$HOME/.config/p10k/.p10k.zsh" ]]; then
-        if [[ "$COMPOSER_NO_INTERACTION" == "1" ]]; then
+        if [[ "$COMPOSER_NO_INTERACTION" == "1" || "$CURSOR_AGENT" == "1" ]]; then
           export POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
           powerlevel10k_plugin_unload
         else
