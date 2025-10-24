@@ -71,11 +71,11 @@
         "rustOverlay": "rustOverlay"
       },
       "locked": {
-        "lastModified": 1761092938,
-        "narHash": "sha256-AfLhIssLXlDarLJOZ8u1rS8ilG4p/Z/Zk64fVJazDPo=",
+        "lastModified": 1761329227,
+        "narHash": "sha256-DJOc8OY/2rFCz0/vxUA6CfSNgpWL2RnWCB0U/rbsHsU=",
         "ref": "main",
-        "rev": "036f32e6b903888e0e6d204b64a1d967864fe92b",
-        "revCount": 740,
+        "rev": "cc9eb0aee74b825bd7d99b792e640a95d131afaf",
+        "revCount": 743,
         "type": "git",
         "url": "ssh://git@github.com/hefomo/nix-hot-pot"
       },
