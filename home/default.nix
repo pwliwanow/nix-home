@@ -17,6 +17,16 @@ in
 
   home = {
     stateVersion = "23.05";
+    path = lib.mkForce (pkgs.buildEnv {
+      name = "home-manager-path";
+      paths = config.home.packages;
+      pathsToLink = [ "/bin" "/sbin" "/etc" "/include" "/share" "/lib" "/libexec" "/conf" "/shell-init" ];
+      inherit (config.home) extraOutputsToInstall;
+      postBuild = config.home.extraProfileCommands;
+      meta = {
+        description = "Environment of packages installed through home-manager";
+      };
+    });
     packages = builtins.attrValues
       {
         visualvm = pkgs.visualvm.override {
