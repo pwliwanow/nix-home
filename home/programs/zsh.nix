@@ -11,8 +11,8 @@
         src = pkgs.fetchFromGitHub {
           owner = "romkatv";
           repo = "powerlevel10k";
-          rev = "v1.16.1";
-          sha256 = "sha256-DLiKH12oqaaVChRqY0Q5oxVjziZdW/PfnRW1fCSCbjo=";
+          rev = "master";
+          sha256 = "sha256-BRJyGn+gTGUWifpJ1ziBKVHACcWw+R5N/HdUi8HzSvY=";
         };
       }
     ];
