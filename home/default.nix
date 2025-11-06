@@ -66,6 +66,7 @@ in
           claude-code
           codex
           gemini-cli
+          copilot
           ;
       };
   };
