@@ -71,11 +71,11 @@
         "rustOverlay": "rustOverlay"
       },
       "locked": {
-        "lastModified": 1762374890,
-        "narHash": "sha256-nXYyU9uT1F4eSkJywv6Mn8/w5R+gPpqld+7M7BOeZtY=",
+        "lastModified": 1762897737,
+        "narHash": "sha256-lfbgHTMXmg0RkT8AK07alfrHzpcVj+DgjgiICzna/XQ=",
         "ref": "main",
-        "rev": "27fad5b086384176c2742acdf3eca1507a8c5a29",
-        "revCount": 754,
+        "rev": "c61d0c775cbc81d700d401c3cd8f5a371fb89ae9",
+        "revCount": 765,
         "type": "git",
         "url": "ssh://git@github.com/hefomo/nix-hot-pot"
       },
@@ -108,11 +108,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1761597516,
-        "narHash": "sha256-wxX7u6D2rpkJLWkZ2E932SIvDJW8+ON/0Yy8+a5vsDU=",
+        "lastModified": 1762498405,
+        "narHash": "sha256-Zg/SCgCaAioc0/SVZQJxuECGPJy+OAeBcGeA5okdYDc=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "daf6dc47aa4b44791372d6139ab7b25269184d55",
+        "rev": "6faeb062ee4cf4f105989d490831713cc5a43ee1",
         "type": "github"
       },
       "original": {
@@ -194,11 +194,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1761964689,
-        "narHash": "sha256-Zo3LQQDz+64EQ9zor/WmeNTFLoZkjmhp0UY3G0D3seE=",
+        "lastModified": 1762655942,
+        "narHash": "sha256-hOM12KcQNQALrhB9w6KJmV5hPpm3GA763HRe9o7JUiI=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "63d22578600f70d293aede6bc737efef60ebd97f",
+        "rev": "6ac961b02d4235572692241e333d0470637f5492",
         "type": "github"
       },
       "original": {
