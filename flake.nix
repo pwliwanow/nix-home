@@ -38,7 +38,6 @@
                   manifest-tool
                   regclient
                   kubesess
-                  k9s
                   dive
                   docker-credential-helpers
                   deno
