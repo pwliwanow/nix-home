@@ -2,6 +2,7 @@
 {
   imports = [
     ./brew.nix
+    ./nix-daemon-env.nix
   ];
 
   #####################
