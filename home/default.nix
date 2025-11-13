@@ -146,6 +146,7 @@ in
           nix-prefetch
           docker-credential-helpers
           rclone
+          ripgrep
           ffmpeg
           claude-code
           codex
