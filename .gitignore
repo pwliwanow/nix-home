@@ -1,3 +1,4 @@
 /result
 /.zsh_history
 /.direnv
+*.env
