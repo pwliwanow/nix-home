@@ -119,16 +119,15 @@
       "locked": {
         "lastModified": 1763486702,
         "narHash": "sha256-K1KmYP6lB9mnBZ1smIGTr97BwJn0+nzhEUyH4nnIl9Q=",
-        "ref": "main",
+        "owner": "hefomo",
+        "repo": "nix-hot-pot",
         "rev": "bf4f6bac6128c252523b7546f5fea8ed377dfbe0",
-        "revCount": 817,
-        "type": "git",
-        "url": "ssh://git@github.com/hefomo/nix-hot-pot"
+        "type": "github"
       },
       "original": {
-        "ref": "main",
-        "type": "git",
-        "url": "ssh://git@github.com/hefomo/nix-hot-pot"
+        "owner": "hefomo",
+        "repo": "nix-hot-pot",
+        "type": "github"
       }
     },
     "nix2containerPkg": {
