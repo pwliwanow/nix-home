@@ -29,9 +29,6 @@ in
     });
     packages = builtins.attrValues
       {
-        visualvm = pkgs.visualvm.override {
-          jdk = pkgs.jdk11;
-        };
         inherit sponge;
         inherit (pkgs)
           meslo-lgs-nf
@@ -56,9 +53,8 @@ in
           watch
           coreutils
           tree
-          jdk11
           wget
-          nodejs_20
+          nodejs_22
           yarn
           skopeo
           dive
@@ -66,7 +62,6 @@ in
           jq
           amazon-ecr-credential-helper
           openssl
-          scala
           pv
           deno
           nix-prefetch
