@@ -14,7 +14,6 @@
       "gptfdisk"
       "docker-compose"
       "awscurl"
-      "doctl"
       "clang-format"
       # "k9s"
       # "awscli"
@@ -23,13 +22,8 @@
     #     cask_args appdir: "~/BrewApplications", require_sha: true
     # '';
     casks = [
-      "conduktor"
       "multipass"
       # "google-cloud-sdk"
-    ];
-    taps = [
-      # "homebrew/cask"
-      "conduktor/brew"
     ];
   };
 }
