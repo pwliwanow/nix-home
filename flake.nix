@@ -99,10 +99,10 @@
               inherit inputs nixpkgs;
             };
           };
-        mbp-m3 = darwin.lib.darwinSystem
+        m4p-mini-2 = darwin.lib.darwinSystem
           {
             system = "aarch64-darwin";
-            modules = nixDarwinCommonModules { hostName = "jacky-mbp-m3"; user = "nktpro"; buildCores = 12; } ++ [{
+            modules = nixDarwinCommonModules { hostName = "m4p-mini-2"; user = "nktpro"; buildCores = 12; } ++ [{
               homebrew = {
                 brewPrefix = "/opt/homebrew/bin";
               };
