@@ -117,11 +117,11 @@
         "rustOverlay": "rustOverlay"
       },
       "locked": {
-        "lastModified": 1763486702,
-        "narHash": "sha256-K1KmYP6lB9mnBZ1smIGTr97BwJn0+nzhEUyH4nnIl9Q=",
+        "lastModified": 1763577275,
+        "narHash": "sha256-B1PoR9TbEzvtYt8vqga75DAMt9QY8voQG1c8XSlAoLY=",
         "owner": "hefomo",
         "repo": "nix-hot-pot",
-        "rev": "bf4f6bac6128c252523b7546f5fea8ed377dfbe0",
+        "rev": "289c0c6e9f624792831f97ba07a660f76045c42c",
         "type": "github"
       },
       "original": {
