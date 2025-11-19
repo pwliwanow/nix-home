@@ -72,6 +72,7 @@ in
           codex
           gemini-cli
           copilot
+          ripgrep
           ;
       };
   };
