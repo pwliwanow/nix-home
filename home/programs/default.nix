@@ -17,8 +17,6 @@
     git = {
       enable = true;
       lfs.enable = true;
-      userName = "Jacky Nguyen";
-      userEmail = "nktpro@gmail.com";
       ignores = [
         ".DS_Store"
         ".AppleDouble"
@@ -46,17 +44,19 @@
         "Temporary Items"
         ".apdisk"
       ];
-      # Replaces aliases in ~/.gitconfig
-      aliases = {
-        co = "checkout";
-        d = "diff";
-        s = "status";
-        pr = "pull --rebase";
-        st = "status";
-        l = "log --graph --pretty='%Cred%h%Creset - %C(bold blue)<%an>%Creset %s%C(yellow)%d%Creset %Cgreen(%cr)' --abbrev-commit --date=relative";
-      };
-      # Global Git config
-      extraConfig = {
+      settings = {
+        user = {
+          name = "Jacky Nguyen";
+          email = "nktpro@gmail.com";
+        };
+        alias = {
+          co = "checkout";
+          d = "diff";
+          s = "status";
+          pr = "pull --rebase";
+          st = "status";
+          l = "log --graph --pretty='%Cred%h%Creset - %C(bold blue)<%an>%Creset %s%C(yellow)%d%Creset %Cgreen(%cr)' --abbrev-commit --date=relative";
+        };
         core = {
           whitespace = "trailing-space,space-before-tab";
         };
