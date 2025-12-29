@@ -33,7 +33,7 @@
           source "$HOME/.config/p10k/.p10k.zsh"
         fi
       fi
-      
+
       alias watchk8s="watch -n1 'timeout 10 kubectl get events -A --sort-by=.metadata.creationTimestamp | tac'"
 
       if [[ -f /opt/homebrew/bin/brew ]]; then
