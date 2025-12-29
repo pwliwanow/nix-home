@@ -73,6 +73,7 @@ in
           gemini-cli
           copilot
           ripgrep
+          tmux
           ;
       };
   };
