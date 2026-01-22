@@ -74,7 +74,8 @@ in
           copilot
           ripgrep
           tmux
-          python3
+          python313
+          uv
           opencode
           google-cloud-sdk
           ;
