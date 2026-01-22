@@ -153,7 +153,8 @@ in
           copilot
           ripgrep
           tmux
-          python3
+          python313
+          uv
           opencode
           google-cloud-sdk
           # util-linux — only flock/setpgid/setsid cherry-picked above
