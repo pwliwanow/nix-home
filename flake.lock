@@ -1,5 +1,25 @@
 {
   "nodes": {
+    "codexPkg": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "rust-overlay": "rust-overlay"
+      },
+      "locked": {
+        "lastModified": 1770092554,
+        "narHash": "sha256-PMKnpj4LXePMJBTWvc7AwumcMkN1NHIcAZfEQxTd4fM=",
+        "owner": "cutity",
+        "repo": "codex",
+        "rev": "55a3b2ae79ba04b45006867366906cea1dd2600b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cutity",
+        "ref": "release/0.94.0",
+        "repo": "codex",
+        "type": "github"
+      }
+    },
     "darwin": {
       "inputs": {
         "nixpkgs": [
@@ -7,11 +27,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1765066094,
-        "narHash": "sha256-0YSU35gfRFJzx/lTGgOt6ubP8K6LeW0vaywzNNqxkl4=",
+        "lastModified": 1767634391,
+        "narHash": "sha256-owcSz2ICqTSvhBbhPP+1eWzi88e54rRZtfCNE5E/wwg=",
         "owner": "lnl7",
         "repo": "nix-darwin",
-        "rev": "688427b1aab9afb478ca07989dc754fa543e03d5",
+        "rev": "08585aacc3d6d6c280a02da195fdbd4b9cf083c2",
         "type": "github"
       },
       "original": {
@@ -24,26 +44,20 @@
     "denoPkg": {
       "inputs": {
         "flake-utils": "flake-utils",
-        "nixpkgs": [
-          "hotPot",
-          "nixpkgs"
-        ],
-        "rust-overlay": [
-          "hotPot",
-          "rustOverlay"
-        ]
+        "nixpkgs": "nixpkgs_2",
+        "rust-overlay": "rust-overlay_2"
       },
       "locked": {
-        "lastModified": 1766266472,
-        "narHash": "sha256-I++fa1yZ3+sAIueyZJtXqyBkqgXVOqnHeiGq08YaQ+M=",
+        "lastModified": 1770162569,
+        "narHash": "sha256-Lw6JQeRLtIoZtbNUN49oxDTNbV0Svz67dU11NpoFLVQ=",
         "owner": "hefomo",
         "repo": "deno",
-        "rev": "6ab38ad57030a30eeca452b457fd6715cd297253",
+        "rev": "558e29f7595cec9792634e1e88f35230bdd5f55e",
         "type": "github"
       },
       "original": {
         "owner": "hefomo",
-        "ref": "release/2.6.3",
+        "ref": "release/2.6.8",
         "repo": "deno",
         "type": "github"
       }
@@ -91,11 +105,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1766939458,
-        "narHash": "sha256-VvZeAKyB3vhyHStSO8ACKzWRKNQPmVWktjfuSVdvtUA=",
+        "lastModified": 1769580047,
+        "narHash": "sha256-tNqCP/+2+peAXXQ2V8RwsBkenlfWMERb+Uy6xmevyhM=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "e298a148013c980e3c8c0ac075295fab5074d643",
+        "rev": "366d78c2856de6ab3411c15c1cb4fb4c2bf5c826",
         "type": "github"
       },
       "original": {
@@ -107,10 +121,11 @@
     },
     "hotPot": {
       "inputs": {
+        "codexPkg": "codexPkg",
         "denoPkg": "denoPkg",
         "flakeUtils": "flakeUtils",
         "nix2containerPkg": "nix2containerPkg",
-        "nixpkgs": "nixpkgs",
+        "nixpkgs": "nixpkgs_3",
         "nixpkgsUnstable": "nixpkgsUnstable",
         "nixpkgsUnstablePrior": "nixpkgsUnstablePrior",
         "npmlock2nixPkg": "npmlock2nixPkg",
@@ -121,11 +136,11 @@
         "wok": "wok"
       },
       "locked": {
-        "lastModified": 1766900473,
-        "narHash": "sha256-ftSPJtKlAQw2t07/h450JeSch7Kwh8eya7oDOrh2vk4=",
+        "lastModified": 1770184937,
+        "narHash": "sha256-fEaY5GoAVzVLob+1aWOpYQnvdFaeZBMmNVgIiw0fxgc=",
         "owner": "hefomo",
         "repo": "nix-hot-pot",
-        "rev": "706856f8c9272ffa2f04fc9f1a7cb09452431317",
+        "rev": "1ffbdb6d1fda7eaad31bcb6bd17d71aa510db953",
         "type": "github"
       },
       "original": {
@@ -157,16 +172,16 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1765762245,
-        "narHash": "sha256-3iXM/zTqEskWtmZs3gqNiVtRTsEjYAedIaLL0mSBsrk=",
-        "owner": "nixos",
+        "lastModified": 1769461804,
+        "narHash": "sha256-msG8SU5WsBUfVVa/9RPLaymvi5bI8edTavbIq3vRlhI=",
+        "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "c8cfcd6ccd422e41cc631a0b73ed4d5a925c393d",
+        "rev": "bfc1b8a4574108ceef22f02bafcf6611380c100d",
         "type": "github"
       },
       "original": {
-        "owner": "nixos",
-        "ref": "nixos-25.11",
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -200,6 +215,38 @@
         "owner": "NixOS",
         "repo": "nixpkgs",
         "rev": "47754b692045206b960d62b04e730d78562db7a5",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1770115704,
+        "narHash": "sha256-KHFT9UWOF2yRPlAnSXQJh6uVcgNcWlFqqiAZ7OVlHNc=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_3": {
+      "locked": {
+        "lastModified": 1768621446,
+        "narHash": "sha256-6YwHV1cjv6arXdF/PQc365h1j+Qje3Pydk501Rm4Q+4=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "72ac591e737060deab2b86d6952babd1f896d7c5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-25.11",
+        "repo": "nixpkgs",
         "type": "github"
       }
     },
@@ -285,6 +332,50 @@
         ]
       }
     },
+    "rust-overlay": {
+      "inputs": {
+        "nixpkgs": [
+          "hotPot",
+          "codexPkg",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1770001842,
+        "narHash": "sha256-ZAyTeILfdWwDp1nuF0RK3McBduMi49qnJvrS+3Ezpac=",
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "rev": "5018343419ea808f8a413241381976b7e60951f2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "rust-overlay_2": {
+      "inputs": {
+        "nixpkgs": [
+          "hotPot",
+          "denoPkg",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1770088046,
+        "narHash": "sha256-4hfYDnUTvL1qSSZEA4CEThxfz+KlwSFQ30Z9jgDguO0=",
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "rev": "71f9daa4e05e49c434d08627e755495ae222bc34",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
     "rustOverlay": {
       "inputs": {
         "nixpkgs": [
@@ -293,11 +384,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1765852971,
-        "narHash": "sha256-rQdOMqfQNhcfqvh1dFIVWh09mrIWwerUJqqBdhIsf8g=",
+        "lastModified": 1768791178,
+        "narHash": "sha256-ZVqH14w7y40DEQOghli1c28NopVNFk1MNNRzEIwMa6M=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "5f98ccecc9f1bc1c19c0a350a659af1a04b3b319",
+        "rev": "3941028eccc4d981f75c933786e1fd95b71024f1",
         "type": "github"
       },
       "original": {
@@ -348,11 +439,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1765631794,
-        "narHash": "sha256-90d//IZ4GXipNsngO4sb2SAPbIC/a2P+IAdAWOwpcOM=",
+        "lastModified": 1768526251,
+        "narHash": "sha256-uT0ICn7tknFtdOP7zhkgOkusq38EcttqUCS5Ho7nIvc=",
         "owner": "pyproject-nix",
         "repo": "uv2nix",
-        "rev": "4cca323a547a1aaa9b94929c4901bed5343eafe8",
+        "rev": "1b8f4d4c874f909de24639142c1141c84119b0f0",
         "type": "github"
       },
       "original": {
@@ -392,11 +483,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1766271260,
-        "narHash": "sha256-YogjbvAQDUKCm5cgzO5OMzK450eqIz+ntPb/P+FvJqM=",
+        "lastModified": 1770184876,
+        "narHash": "sha256-98SKFJBgVoOXGndqkgEvLw2i+OR2WT0szng+16iUOd4=",
         "owner": "hefomo",
         "repo": "wok",
-        "rev": "d0b33cb22ab50fa8120b9f7ed578cf6e79c53c8d",
+        "rev": "9ad7f80f2da5883edd4d01b52c3d456df3f46c6d",
         "type": "github"
       },
       "original": {
