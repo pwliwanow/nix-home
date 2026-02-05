@@ -155,6 +155,7 @@ in
           tmux
           python313
           uv
+          temporal-cli
           opencode
           google-cloud-sdk
           # util-linux — only flock/setpgid/setsid cherry-picked above
