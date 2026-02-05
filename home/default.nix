@@ -76,6 +76,7 @@ in
           tmux
           python313
           uv
+          temporal-cli
           opencode
           google-cloud-sdk
           ;
