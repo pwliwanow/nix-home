@@ -48,6 +48,7 @@
       unset HISTFILE
 
       alias kubectx="kcd"
+      alias claude-diet='DISABLE_AUTO_COMPACT=1 claude --dangerously-skip-permissions --disallowed-tools="WebFetch,WebSearch,NotebookEdit,AskUserQuestion,Skill,EnterPlanMode,ExitPlanMode"'
     '';
   };
 }
