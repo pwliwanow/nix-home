@@ -74,6 +74,7 @@ in
           copilot
           ripgrep
           tmux
+          python3
           ;
       };
   };
