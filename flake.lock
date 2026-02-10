@@ -41,6 +41,36 @@
         "type": "github"
       }
     },
+    "denoImpactPkg": {
+      "inputs": {
+        "flake-utils": [
+          "hotPot",
+          "flakeUtils"
+        ],
+        "nixpkgs": [
+          "hotPot",
+          "nixpkgs"
+        ],
+        "rust-overlay": [
+          "hotPot",
+          "rustOverlay"
+        ]
+      },
+      "locked": {
+        "lastModified": 1770686428,
+        "narHash": "sha256-MQfvUO5oivmj1yE7kW+++06qMAA1eUhQQKoG9aypOHE=",
+        "owner": "cutity",
+        "repo": "deno-impact",
+        "rev": "6dbfe157c646e40b46fb97b6110c27ca3df75cbd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cutity",
+        "ref": "v1.0.1",
+        "repo": "deno-impact",
+        "type": "github"
+      }
+    },
     "denoPkg": {
       "inputs": {
         "flake-utils": "flake-utils",
@@ -48,11 +78,11 @@
         "rust-overlay": "rust-overlay_2"
       },
       "locked": {
-        "lastModified": 1770440021,
-        "narHash": "sha256-9VNK0B9PW6Rg7gpu13d+8sW6+CQOREZzb+nTmZ+qgVw=",
+        "lastModified": 1770675813,
+        "narHash": "sha256-vjIaeqR0HL6+uYr0Mdmn/5p5zGxLVNPF2HBgelvKxmk=",
         "owner": "cutity",
         "repo": "deno",
-        "rev": "f4a457cf4f81ad6e374aaddfdfe4f7628333d81d",
+        "rev": "a2bef4c2aac9a784aa54c24ec1a98d625d3983cd",
         "type": "github"
       },
       "original": {
@@ -122,6 +152,7 @@
     "hotPot": {
       "inputs": {
         "codexPkg": "codexPkg",
+        "denoImpactPkg": "denoImpactPkg",
         "denoPkg": "denoPkg",
         "flakeUtils": "flakeUtils",
         "nix2containerPkg": "nix2containerPkg",
@@ -136,11 +167,11 @@
         "wok": "wok"
       },
       "locked": {
-        "lastModified": 1770515481,
-        "narHash": "sha256-1sU9tNwjfKg7k+nJvG1nBctb+e+lFbHQkxsH1cFuwOU=",
+        "lastModified": 1770718858,
+        "narHash": "sha256-H/TuaSf/I8rmcYXu0vAhxcG36CCn5yCuR4gFJkMT/oI=",
         "owner": "hefomo",
         "repo": "nix-hot-pot",
-        "rev": "ac3b453ad9e2fed2f0b7a8d7c5f7525409adfbb6",
+        "rev": "580ca7b4049e749af5f61f0115c09765faae016f",
         "type": "github"
       },
       "original": {
@@ -483,11 +514,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1770440938,
-        "narHash": "sha256-G8RRzSQ83lTulBPf8pPQWrcluOBdQcW0aTHrnoyV5rA=",
+        "lastModified": 1770718796,
+        "narHash": "sha256-dxFh1u1R475nZhYnLQkf1aJo15lwejDxPVMp8Scr6D0=",
         "owner": "cutity",
         "repo": "wok",
-        "rev": "ae173c8a34a6343b6232ec3c472c2bc70c14f019",
+        "rev": "c5cdc9d229e32d6c9b2628663a3ec4bc0dde5f4c",
         "type": "github"
       },
       "original": {
