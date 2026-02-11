@@ -55,6 +55,7 @@ in
           tree
           wget
           nodejs_22
+          pnpm
           yarn
           skopeo
           dive
@@ -77,6 +78,8 @@ in
           python313
           uv
           temporal-cli
+          cfn-nag
+          ssm-session-manager-plugin
           opencode
           google-cloud-sdk
           ;
