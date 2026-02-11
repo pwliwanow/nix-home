@@ -134,6 +134,7 @@ in
           tree
           wget
           nodejs_24
+          pnpm
           yarn
           skopeo
           dive
@@ -156,6 +157,8 @@ in
           python313
           uv
           temporal-cli
+          cfn-nag
+          ssm-session-manager-plugin
           opencode
           google-cloud-sdk
           # util-linux — only flock/setpgid/setsid cherry-picked above
