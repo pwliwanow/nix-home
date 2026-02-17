@@ -47,7 +47,7 @@ in
           awscli2
           iperf2
           iperf3
-          inetutils
+          # inetutils
           gh
           gnupg
           watch
