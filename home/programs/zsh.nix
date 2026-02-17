@@ -43,10 +43,9 @@
       export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
       export JAVA_HOME="${pkgs.jdk11}"
 
-      source ${pkgs.kubesess}/shell-init/kubesess.sh
-      source ${pkgs.kubesess}/shell-init/completion.sh
       unset HISTFILE
 
+      eval "$(kubesess init zsh)"
       alias kubectx="kcd"
       alias claude-diet='DISABLE_AUTO_COMPACT=1 claude --dangerously-skip-permissions --disallowed-tools="WebFetch,WebSearch,NotebookEdit,AskUserQuestion,Skill,EnterPlanMode,ExitPlanMode"'
     '';
