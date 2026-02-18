@@ -68,7 +68,7 @@ in
           docker-credential-helpers
           rclone
           ffmpeg
-          claude-code
+          claude-code-npm
           codex
           gemini-cli
           copilot
