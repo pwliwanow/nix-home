@@ -47,7 +47,7 @@
 
       eval "$(kubesess init zsh)"
       alias kubectx="kcd"
-      alias claude-diet='DISABLE_AUTO_COMPACT=1 claude --dangerously-skip-permissions --disallowed-tools="WebFetch,WebSearch,NotebookEdit,AskUserQuestion,Skill,EnterPlanMode,ExitPlanMode"'
+      alias claude-diet='DISABLE_AUTO_COMPACT=1 claude --dangerously-skip-permissions --disallowed-tools="NotebookEdit"'
     '';
   };
 }
