@@ -75,6 +75,7 @@ in
           ripgrep
           tmux
           python3
+          opencode
           ;
       };
   };

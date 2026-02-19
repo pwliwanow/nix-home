@@ -45,6 +45,7 @@
                   codex
                   gemini-cli
                   copilot
+                  opencode
                   ;
                 # scala = prev.scala.override {
                 #   jre = prev.jdk8;
