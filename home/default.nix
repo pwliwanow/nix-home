@@ -76,6 +76,7 @@ in
           tmux
           python3
           opencode
+          google-cloud-sdk
           ;
       };
   };
