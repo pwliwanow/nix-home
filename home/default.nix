@@ -77,6 +77,7 @@ in
           python3
           opencode
           google-cloud-sdk
+          util-linux
           ;
       };
   };
