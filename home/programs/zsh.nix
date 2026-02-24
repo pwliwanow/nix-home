@@ -48,6 +48,7 @@
       eval "$(kubesess init zsh)"
       alias kubectx="kcd"
       alias claude-diet='DISABLE_AUTO_COMPACT=1 claude --dangerously-skip-permissions --disallowed-tools="NotebookEdit"'
+      alias codex-spark='codex -p spark -c model_context_window=128000 -c model_auto_compact_token_limit=115200'
     '';
   };
 }
