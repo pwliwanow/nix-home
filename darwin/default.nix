@@ -12,6 +12,7 @@
     # gc.user = "nktpro";
     package = pkgs.nix;
     extraOptions = ''
+      sandbox = relaxed
       keep-outputs = true
       keep-derivations = true
       experimental-features = nix-command flakes ca-derivations
