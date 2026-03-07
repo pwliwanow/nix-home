@@ -15,6 +15,7 @@
       keep-outputs = true
       keep-derivations = true
       experimental-features = nix-command flakes ca-derivations
+      lazy-trees = true
       builders = @/etc/nix/machines
       builders-use-substitutes = true
       trusted-users = root ${lib.concatStringsSep " " (builtins.attrNames config.users.users)}
