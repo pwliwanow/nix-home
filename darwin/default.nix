@@ -9,8 +9,7 @@
   # Nix configuration #
   #####################
   nix = {
-    # gc.user = "nktpro";
-    package = pkgs.nix;
+    package = inputs.determinate.inputs.nix.packages.${pkgs.stdenv.hostPlatform.system}.default;
     extraOptions = ''
       sandbox = relaxed
       keep-outputs = true
@@ -22,11 +21,9 @@
       narinfo-cache-negative-ttl = 0
     '';
     gc = {
-      # user = "nktpro";
       automatic = true;
       options = "--delete-older-than 60d";
     };
-    # readOnlyStore = true;
     nixPath = [
       "nixpkgs=/etc/${config.environment.etc.nixpkgs.target}"
       "home-manager=/etc/${config.environment.etc.home-manager.target}"
@@ -35,10 +32,12 @@
     settings = {
       substituters = lib.mkForce [
         "https://cache.nixos.org?priority=40"
+        "https://install.determinate.systems?priority=50"
         "https://nixcache.atl1.digitaloceanspaces.com?priority=60"
       ];
       trusted-public-keys = lib.mkForce [
         "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
+        "cache.flakehub.com-3:hJuILl5sVK4iKm86JzgdXW12Y2Hwd5G07qKtHTOcDCM="
         "nix-cache:jxOpK2dQOv/7JIb5/30+W4oidtUgmFMXLc/3mC09mKM="
       ];
     };

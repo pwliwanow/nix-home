@@ -12,6 +12,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    determinate.url = "https://flakehub.com/f/DeterminateSystems/determinate/3";
+
     home-manager = {
       url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -20,7 +22,7 @@
     flakeUtils.follows = "hotPot/flakeUtils";
   };
 
-  outputs = inputs@{ self, nixpkgs, darwin, home-manager, flakeUtils, hotPot, ... }:
+  outputs = inputs@{ self, nixpkgs, darwin, home-manager, flakeUtils, hotPot, determinate, ... }:
     let
       nixpkgsConfig = with inputs; {
         config = {
@@ -132,6 +134,6 @@
         pkgs = import nixpkgs { inherit system; };
       in
       {
-        devShell = import ./shell.nix { inherit pkgs; };
+        devShells.default = import ./shell.nix { inherit pkgs; };
       });
 }
