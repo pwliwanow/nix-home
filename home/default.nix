@@ -4,6 +4,53 @@ let
     mkdir -p $out/bin
     ln -s ${pkgs.moreutils}/bin/sponge $out/bin/sponge
   '';
+
+  restic-b2 = pkgs.writeShellScriptBin "restic-b2" ''
+    set -euo pipefail
+
+    CONFIG_DIR="$HOME/.config/restic"
+    RESTIC="${pkgs.restic}/bin/restic"
+    source "$CONFIG_DIR/b2.env"
+    S3_CONNECTIONS=50
+    SOURCES_FILE="$CONFIG_DIR/sources.conf"
+    EXCLUDE_FILE="$CONFIG_DIR/excludes.txt"
+
+    load_sources() {
+      declare -gA SOURCES
+      declare -ga SOURCE_ORDER
+      [[ -f "$SOURCES_FILE" ]] || { echo "error: $SOURCES_FILE not found (format: name=/path)"; exit 1; }
+      while IFS='=' read -r name path; do
+        [[ -z "$name" || "$name" == \#* ]] && continue
+        SOURCES["$name"]="$path"
+        SOURCE_ORDER+=("$name")
+      done < "$SOURCES_FILE"
+    }
+
+    do_backup() {
+      if [[ "''${1:-}" == "--name" && -n "''${2:-}" ]]; then
+        local name="$2"
+        [[ -n "''${SOURCES[$name]+x}" ]] || { echo "Unknown source: $name (available: ''${!SOURCES[*]})"; exit 1; }
+        echo "==> Backing up $name: ''${SOURCES[$name]}"
+        $RESTIC backup "''${SOURCES[$name]}" --tag "$name" \
+          --exclude-file="$EXCLUDE_FILE" \
+          --exclude-if-present CACHEDIR.TAG --exclude-if-present .nobackup \
+          -o s3.connections="$S3_CONNECTIONS"
+      else
+        for name in "''${SOURCE_ORDER[@]}"; do do_backup --name "$name"; done
+      fi
+    }
+
+    case "''${1:-backup}" in
+      backup)
+        load_sources
+        shift || true
+        do_backup "$@"
+        ;;
+      *)
+        $RESTIC -o s3.connections="$S3_CONNECTIONS" "$@"
+        ;;
+    esac
+  '';
 in
 {
   imports = [
@@ -29,7 +76,7 @@ in
     });
     packages = builtins.attrValues
       {
-        inherit sponge;
+        inherit sponge restic-b2;
         inherit (pkgs)
           meslo-lgs-nf
           regclient
@@ -78,6 +125,7 @@ in
           opencode
           google-cloud-sdk
           util-linux
+          restic
           ;
       };
   };

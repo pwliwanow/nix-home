@@ -19,6 +19,33 @@
           }
         '';
       };
+      "restic/excludes.txt" = {
+        text = ''
+          node_modules
+          .git
+          __pycache__
+          .DS_Store
+          .Spotlight-V100
+          .fseventsd
+          .Trashes
+          Thumbs.db
+          .venv
+          venv
+          .tox
+          .mypy_cache
+          .pytest_cache
+          .cache
+          .gradle
+          build
+          dist
+          target
+          *.o
+          *.a
+          *.dylib
+          .terraform
+          .next
+        '';
+      };
       "k9s/plugins.yaml" = {
         text = ''
           plugins:
