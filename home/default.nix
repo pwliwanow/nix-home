@@ -5,6 +5,32 @@ let
     ln -s ${pkgs.moreutils}/bin/sponge $out/bin/sponge
   '';
 
+  coreutils' = let
+    # GNU-only: no macOS equivalent exists
+    gnu-only = [
+      "b2sum" "base32" "basenc" "chcon" "chroot" "dir" "dircolors"
+      "factor" "hostid" "md5sum" "mknod" "nproc" "numfmt" "pinky"
+      "ptx" "runcon" "sha1sum" "sha224sum" "sha256sum" "sha384sum"
+      "sha512sum" "shred" "shuf" "stdbuf" "tac" "timeout" "vdir"
+    ];
+    # GNU version is better or equivalent to macOS built-in
+    gnu-preferred = [
+      "base64" "cat" "cut" "echo" "env" "expand" "expr" "false"
+      "fmt" "fold" "head" "install" "join" "kill" "link" "ln"
+      "mkdir" "mkfifo" "mktemp" "nice" "nl" "nohup" "od" "paste"
+      "pr" "printenv" "printf" "pwd" "readlink" "realpath" "rm"
+      "rmdir" "seq" "sleep" "sort" "split" "sync" "tail" "tee"
+      "test" "[" "touch" "tr" "true" "truncate" "tsort" "tty"
+      "uname" "unexpand" "uniq" "unlink" "wc" "yes"
+    ];
+    include = gnu-only ++ gnu-preferred;
+  in pkgs.runCommand "coreutils-macos" { } ''
+    mkdir -p $out/bin
+    for name in ${lib.concatStringsSep " " include}; do
+      ln -s "${pkgs.coreutils}/bin/$name" "$out/bin/$name"
+    done
+  '';
+
   restic-b2 = pkgs.writeShellScriptBin "restic-b2" ''
     set -euo pipefail
 
@@ -76,7 +102,7 @@ in
     });
     packages = builtins.attrValues
       {
-        inherit sponge restic-b2;
+        inherit sponge restic-b2 coreutils';
         inherit (pkgs)
           meslo-lgs-nf
           regclient
@@ -98,7 +124,6 @@ in
           gh
           gnupg
           watch
-          coreutils
           tree
           wget
           nodejs_22
