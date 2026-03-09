@@ -5,6 +5,13 @@ let
     ln -s ${pkgs.moreutils}/bin/sponge $out/bin/sponge
   '';
 
+  util-linux' = pkgs.runCommand "util-linux-symlinks" { } ''
+    mkdir -p $out/bin
+    ln -s ${pkgs.util-linux.bin}/bin/flock $out/bin/flock
+    ln -s ${pkgs.util-linux.bin}/bin/setpgid $out/bin/setpgid
+    ln -s ${pkgs.util-linux.bin}/bin/setsid $out/bin/setsid
+  '';
+
   coreutils' = let
     # GNU-only: no macOS equivalent exists
     gnu-only = [
@@ -102,7 +109,7 @@ in
     });
     packages = builtins.attrValues
       {
-        inherit sponge restic-b2 coreutils';
+        inherit sponge util-linux' restic-b2 coreutils';
         inherit (pkgs)
           meslo-lgs-nf
           regclient
@@ -149,7 +156,7 @@ in
           python3
           opencode
           google-cloud-sdk
-          util-linux
+          # util-linux — only flock/setpgid/setsid cherry-picked above
           restic
           ;
       };
