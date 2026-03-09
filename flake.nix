@@ -12,8 +12,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    determinate.url = "https://flakehub.com/f/DeterminateSystems/determinate/3";
-
     home-manager = {
       url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -22,7 +20,7 @@
     flakeUtils.follows = "hotPot/flakeUtils";
   };
 
-  outputs = inputs@{ self, nixpkgs, darwin, home-manager, flakeUtils, hotPot, determinate, ... }:
+  outputs = inputs@{ self, nixpkgs, darwin, home-manager, flakeUtils, hotPot, ... }:
     let
       nixpkgsConfig = with inputs; {
         config = {
@@ -49,6 +47,7 @@
                   gemini-cli
                   copilot
                   opencode
+                  determinate-nix
                   ;
                 # scala = prev.scala.override {
                 #   jre = prev.jdk8;

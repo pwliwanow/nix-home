@@ -9,9 +9,10 @@
   # Nix configuration #
   #####################
   nix = {
-    package = inputs.determinate.inputs.nix.packages.${pkgs.stdenv.hostPlatform.system}.default;
+    package = pkgs.determinate-nix;
     extraOptions = ''
       sandbox = relaxed
+      extra-sandbox-paths = /private/etc/ssl
       keep-outputs = true
       keep-derivations = true
       experimental-features = nix-command flakes ca-derivations
@@ -32,7 +33,6 @@
     settings = {
       substituters = lib.mkForce [
         "https://cache.nixos.org?priority=40"
-        "https://install.determinate.systems?priority=50"
         "https://nixcache.atl1.digitaloceanspaces.com?priority=60"
       ];
       trusted-public-keys = lib.mkForce [
