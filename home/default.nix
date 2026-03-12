@@ -131,6 +131,7 @@ in
           gh
           gnupg
           watch
+          cloudflared
           tree
           wget
           nodejs_24
