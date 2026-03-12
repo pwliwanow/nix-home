@@ -133,7 +133,7 @@ in
           watch
           tree
           wget
-          nodejs_22
+          nodejs_24
           yarn
           skopeo
           dive
