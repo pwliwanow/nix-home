@@ -57,16 +57,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1771034338,
-        "narHash": "sha256-i/HXZjpyQsmoJrOlv8rFrnMMOjGDJIew/sP5Mza34+E=",
+        "lastModified": 1773363242,
+        "narHash": "sha256-UvpliOrh/Uotgeyo3TK79JMXPORRi3SrluVb7BYKk2A=",
         "owner": "cutity",
         "repo": "deno-impact",
-        "rev": "bbc45fce07a70c6c5ca6476d0d5b07123e0f4e2f",
+        "rev": "4d19765a3169da9d5a7ba72de70c997839e025ba",
         "type": "github"
       },
       "original": {
         "owner": "cutity",
-        "ref": "v1.3.1",
+        "ref": "v3.0.0",
         "repo": "deno-impact",
         "type": "github"
       }
@@ -276,11 +276,11 @@
         "wok": "wok"
       },
       "locked": {
-        "lastModified": 1773281668,
-        "narHash": "sha256-HNJw7r7lg4LAh1CYcvsHsWED0j+eHboBKg8JNORinHM=",
+        "lastModified": 1773424459,
+        "narHash": "sha256-uCQ9qr//gC+XE4GhkRv0KVxynd7rcsy+jhXbr7wS45I=",
         "owner": "cutity",
         "repo": "nix-hot-pot",
-        "rev": "d36171f94238acfb1148cc974123495cc211bfea",
+        "rev": "cca0a353d7f7d228871f07a3dc56dc9f951716e3",
         "type": "github"
       },
       "original": {
