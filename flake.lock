@@ -6,16 +6,16 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1773281586,
-        "narHash": "sha256-3zcaiqefAGDU5vx36uiQx4dBErm2Auz0+RkXlVP5sfI=",
+        "lastModified": 1773988923,
+        "narHash": "sha256-vcnUxUpeHsVfuy6xMtV9rlTPymNfWTemKWYk5o5fxK4=",
         "owner": "cutity",
         "repo": "codex",
-        "rev": "f5a219e82a83f70046833bb4658de57d53110878",
+        "rev": "f674dae15dacdd421c8a1387bcc6b442e0ea36ee",
         "type": "github"
       },
       "original": {
         "owner": "cutity",
-        "ref": "release/0.114.0",
+        "ref": "release/0.115.0",
         "repo": "codex",
         "type": "github"
       }
@@ -57,16 +57,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1773363242,
-        "narHash": "sha256-UvpliOrh/Uotgeyo3TK79JMXPORRi3SrluVb7BYKk2A=",
+        "lastModified": 1773855884,
+        "narHash": "sha256-Y2i64hHmnRnaPv1ARRff/aBTCjsEF8Q9EXOuVvGG684=",
         "owner": "cutity",
         "repo": "deno-impact",
-        "rev": "4d19765a3169da9d5a7ba72de70c997839e025ba",
+        "rev": "a2b8582ea1b3a74e76383cde2a9527dafdde9d58",
         "type": "github"
       },
       "original": {
         "owner": "cutity",
-        "ref": "v3.0.0",
+        "ref": "v4.0.0",
         "repo": "deno-impact",
         "type": "github"
       }
@@ -245,11 +245,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1773264488,
-        "narHash": "sha256-rK0507bDuWBrZo+0zts9bCs/+RRUEHuvFE5DHWPxX/Q=",
+        "lastModified": 1773963144,
+        "narHash": "sha256-WzBOBfSay3GYilUfKaUa1Mbf8/jtuAiJIedx7fWuIX4=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "5c0f63f8d55040a7eed69df7e3fcdd15dfb5a04c",
+        "rev": "a91b3ea73a765614d90360580b689c48102d1d33",
         "type": "github"
       },
       "original": {
@@ -276,11 +276,11 @@
         "wok": "wok"
       },
       "locked": {
-        "lastModified": 1773424459,
-        "narHash": "sha256-uCQ9qr//gC+XE4GhkRv0KVxynd7rcsy+jhXbr7wS45I=",
+        "lastModified": 1773989080,
+        "narHash": "sha256-A2KVRMFZMO+pmdKx9EbR/E0AxiF7AieSDU3rPB0CBmA=",
         "owner": "cutity",
         "repo": "nix-hot-pot",
-        "rev": "cca0a353d7f7d228871f07a3dc56dc9f951716e3",
+        "rev": "9d31ff1fc2a9465f4a5baaef0326288b5da21c88",
         "type": "github"
       },
       "original": {
@@ -477,11 +477,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1773216618,
-        "narHash": "sha256-iZlowevS+xKLGOXtZwpIrz3SWe7PtoGUfEeVZNib+WE=",
+        "lastModified": 1773803479,
+        "narHash": "sha256-GD6i1F2vrSxbsmbS92+8+x3DbHOJ+yrS78Pm4xigW4M=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "07d7dc6fcc5eae76b4fb0e19d4afd939437bec97",
+        "rev": "f17186f52e82ec5cf40920b58eac63b78692ac7c",
         "type": "github"
       },
       "original": {
