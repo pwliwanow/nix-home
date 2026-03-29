@@ -6,11 +6,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1774667790,
-        "narHash": "sha256-neJxbOxwtKldpoGyDU4eNxOe6+SXZ/i0iF751FcjM5s=",
+        "lastModified": 1774805211,
+        "narHash": "sha256-emoDmc2VWlVYB+A5wUhRIO5vJ/UxMwga33iA9hyg0Kc=",
         "owner": "cutity",
         "repo": "codex",
-        "rev": "65a6b2a66aa088b8087f62345b0161f895eb416f",
+        "rev": "2ea462880964b1825650b599529ea8a1c4e0edd7",
         "type": "github"
       },
       "original": {
@@ -78,16 +78,16 @@
         "rust-overlay": "rust-overlay_2"
       },
       "locked": {
-        "lastModified": 1774494202,
-        "narHash": "sha256-SvMG9MNpTlf80wH1k9/taNIWo+MdmbefR0uQYr8oVLo=",
+        "lastModified": 1774810585,
+        "narHash": "sha256-yKf3rBwLbCkGlOG18BVVeJMYeuYF23Q4yniQBMbmEkk=",
         "owner": "cutity",
         "repo": "deno",
-        "rev": "f8cb27ca621bc1c84e0a86a66344c8c0e950cbba",
+        "rev": "e3b440058eb3e8995c121e8ebcf689eb6368d07a",
         "type": "github"
       },
       "original": {
         "owner": "cutity",
-        "ref": "release/2.7.8",
+        "ref": "release/2.7.9",
         "repo": "deno",
         "type": "github"
       }
@@ -276,11 +276,11 @@
         "wok": "wok"
       },
       "locked": {
-        "lastModified": 1774806628,
-        "narHash": "sha256-ooM/EEtOSjSG0x8VCrbWtwftAYbAijEFZsjoBYtvtN4=",
+        "lastModified": 1774810648,
+        "narHash": "sha256-pKWlQSnT7J1E2NJF4OfC/JySWDLUZIExAJPwNS7uxEg=",
         "owner": "cutity",
         "repo": "nix-hot-pot",
-        "rev": "14c323425490f0560851fb7fbbb4bd16490a6120",
+        "rev": "cac0480bef0cdad21f8ea62629df8797859274fa",
         "type": "github"
       },
       "original": {
