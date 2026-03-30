@@ -31,6 +31,7 @@
       "darwin=/etc/${config.environment.etc.darwin.target}"
     ];
     settings = {
+      use-xdg-base-directories = true;
       substituters = lib.mkForce [
         "https://cache.nixos.org?priority=40"
         "https://nixcache.atl1.digitaloceanspaces.com?priority=60"
@@ -60,6 +61,11 @@
   ################
 
   environment = {
+    profiles = lib.mkForce [
+      "/Users/${config.system.primaryUser}/.local/state/nix/profile"
+      "/run/current-system/sw"
+      "/nix/var/nix/profiles/default"
+    ];
     etc = {
       home-manager.source = "${inputs.home-manager}";
       nixpkgs.source = "${inputs.nixpkgs}";
