@@ -40,12 +40,6 @@
         eval "$(/opt/homebrew/bin/brew shellenv)"
       fi
 
-      nix_profile_bin="''${XDG_STATE_HOME:-$HOME/.local/state}/nix/profile/bin"
-      if [[ -d "$nix_profile_bin" ]]; then
-        path=("$nix_profile_bin" $path)
-        export PATH
-      fi
-
       export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
       export JAVA_HOME="${pkgs.jdk11}"
 
