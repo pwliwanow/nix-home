@@ -6,16 +6,16 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1774844262,
-        "narHash": "sha256-HVUi8hnh1DigC+/lEswB+XUoQop/CooiijYgdGmOKcM=",
+        "lastModified": 1775008470,
+        "narHash": "sha256-PKV2uxy61KmF+E5JcZISyBPaE/XhmTHcQvVnqHXQ7vU=",
         "owner": "cutity",
         "repo": "codex",
-        "rev": "e3af0ac9bea8bafcf3c29161568d95af398efe8e",
+        "rev": "176c955a2e07c43f96bc98d18bc0befa8b8ae0e0",
         "type": "github"
       },
       "original": {
         "owner": "cutity",
-        "ref": "release/0.117.0",
+        "ref": "release/0.118.0",
         "repo": "codex",
         "type": "github"
       }
@@ -78,16 +78,16 @@
         "rust-overlay": "rust-overlay_2"
       },
       "locked": {
-        "lastModified": 1774810585,
-        "narHash": "sha256-yKf3rBwLbCkGlOG18BVVeJMYeuYF23Q4yniQBMbmEkk=",
+        "lastModified": 1775240503,
+        "narHash": "sha256-SjpzSLLy4G4vQ3nrkmQosFmaGeYy36sAJViTAf+DKc0=",
         "owner": "cutity",
         "repo": "deno",
-        "rev": "e3b440058eb3e8995c121e8ebcf689eb6368d07a",
+        "rev": "6c1adf68db15936607aa00223a7db006a06c1efe",
         "type": "github"
       },
       "original": {
         "owner": "cutity",
-        "ref": "release/2.7.9",
+        "ref": "release/2.7.11",
         "repo": "deno",
         "type": "github"
       }
@@ -245,11 +245,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1774875830,
-        "narHash": "sha256-WPYlTmZvVa9dWlAziFkVjBdv1Z6giNIq40O1DxsBmiI=",
+        "lastModified": 1775077333,
+        "narHash": "sha256-OXcxobt7lBkh1B8AjwreU+24myhtKpqeLfAeIyNLFY8=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "7afd8cebb99e25a64a745765920e663478eb8830",
+        "rev": "49ca96b2714c5931e17401eff87f3edd42d2b0f2",
         "type": "github"
       },
       "original": {
@@ -276,11 +276,11 @@
         "wok": "wok"
       },
       "locked": {
-        "lastModified": 1774973877,
-        "narHash": "sha256-WjSjglma7Qv569LtFj8swYg6/pBUNha+x0JI7AUAh5c=",
+        "lastModified": 1775242206,
+        "narHash": "sha256-2OiZhaLRDFYgmtkOVDxdrxYvkUAD5fIoiBjj7eLksI4=",
         "owner": "cutity",
         "repo": "nix-hot-pot",
-        "rev": "1855f4caa01bf0489d13661e5c995b3cd8f24477",
+        "rev": "c0427fd731c7b63a8840bddaeff075985e516b4b",
         "type": "github"
       },
       "original": {
