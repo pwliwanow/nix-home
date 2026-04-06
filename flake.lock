@@ -245,11 +245,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1775077333,
-        "narHash": "sha256-OXcxobt7lBkh1B8AjwreU+24myhtKpqeLfAeIyNLFY8=",
+        "lastModified": 1775425411,
+        "narHash": "sha256-KY6HsebJHEe5nHOWP7ur09mb0drGxYSzE3rQxy62rJo=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "49ca96b2714c5931e17401eff87f3edd42d2b0f2",
+        "rev": "0d02ec1d0a05f88ef9e74b516842900c41f0f2fe",
         "type": "github"
       },
       "original": {
@@ -272,15 +272,16 @@
         "nixpkgsUnstable": "nixpkgsUnstable",
         "nixpkgsUnstablePrior": "nixpkgsUnstablePrior",
         "npmlock2nixPkg": "npmlock2nixPkg",
+        "opencodePkg": "opencodePkg",
         "rustOverlay": "rustOverlay",
         "wok": "wok"
       },
       "locked": {
-        "lastModified": 1775242206,
-        "narHash": "sha256-2OiZhaLRDFYgmtkOVDxdrxYvkUAD5fIoiBjj7eLksI4=",
+        "lastModified": 1775514380,
+        "narHash": "sha256-nYahjdY75rypVpSs5YbucRnVWNmxeIbwsTbfKsq49U0=",
         "owner": "cutity",
         "repo": "nix-hot-pot",
-        "rev": "c0427fd731c7b63a8840bddaeff075985e516b4b",
+        "rev": "381902e22fec24464d76bfa3e3d877dcbaa1a69c",
         "type": "github"
       },
       "original": {
@@ -299,11 +300,11 @@
         "spectrum": "spectrum"
       },
       "locked": {
-        "lastModified": 1773872447,
-        "narHash": "sha256-IWTp4EMUfZwnuF5S/AjWfOFzCbbgkMzRwNd0qHC/EMg=",
+        "lastModified": 1774448302,
+        "narHash": "sha256-Z7QLau4WR38/pMPNVH3MEGeMybBTaAzn+PUCErMngFw=",
         "owner": "microvm-nix",
         "repo": "microvm.nix",
-        "rev": "b202882536b018a76f0b6e71a48677f41f4de9d8",
+        "rev": "da28962a2ba84718895b7325f600686c3b4ee099",
         "type": "github"
       },
       "original": {
@@ -459,6 +460,22 @@
         "type": "github"
       }
     },
+    "nixpkgs_5": {
+      "locked": {
+        "lastModified": 1775403759,
+        "narHash": "sha256-cGyKiTspHEUx3QwAnV3RfyT+VOXhHLs+NEr17HU34Wo=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "5e11f7acce6c3469bef9df154d78534fa7ae8b6c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "npmlock2nixPkg": {
       "flake": false,
       "locked": {
@@ -473,6 +490,25 @@
         "owner": "nix-community",
         "repo": "npmlock2nix",
         "rev": "9197bbf397d76059a76310523d45df10d2e4ca81",
+        "type": "github"
+      }
+    },
+    "opencodePkg": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_5"
+      },
+      "locked": {
+        "lastModified": 1775509342,
+        "narHash": "sha256-be3ZfrjJvqqI0cjqteR2XomLY9UZOLSu0ILnFFI4zNs=",
+        "owner": "cutity",
+        "repo": "opencode",
+        "rev": "e2940e183829e216d0895d6d88d841c7d06df29f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cutity",
+        "ref": "release/1.3.17",
+        "repo": "opencode",
         "type": "github"
       }
     },
@@ -634,11 +670,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1774463264,
-        "narHash": "sha256-9mz3wo+/VEJ82E91u3lg5ZYPA8N8tPoIoypmPEHQoqg=",
+        "lastModified": 1775513834,
+        "narHash": "sha256-kmLvMeAFkDuCGQ+oljQPFV33aC6b6zm9UMf2fiqxKKQ=",
         "owner": "cutity",
         "repo": "wok",
-        "rev": "1e226fc0d6195f7cecaa4ed1e247083e19ec5b8f",
+        "rev": "9c64fdfccdb960cb74f88a2096bdd726a74286bb",
         "type": "github"
       },
       "original": {
