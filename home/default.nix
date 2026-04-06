@@ -158,6 +158,8 @@ in
           google-cloud-sdk
           # util-linux — only flock/setpgid/setsid cherry-picked above
           restic
+          omni-agent
+          changefeed
           ;
       };
   };

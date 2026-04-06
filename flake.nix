@@ -48,6 +48,8 @@
                   copilot
                   opencode
                   determinate-nix
+                  omni-agent
+                  changefeed
                   ;
                 # scala = prev.scala.override {
                 #   jre = prev.jdk8;
