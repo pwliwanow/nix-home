@@ -51,7 +51,7 @@ let
   darwinBuild = ''
     CONFIG=''${1?"Config name is required"}
     ${pkgs.nix}/bin/nix build ".#darwinConfigurations.''${CONFIG}.system" \
-      --experimental-features "flakes nix-command" --show-trace
+      --experimental-features "flakes nix-command ca-derivations" --show-trace
   '';
 
   darwinInstall = pkgs.writeShellScriptBin "darwinInstall" ''
