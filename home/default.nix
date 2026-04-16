@@ -147,7 +147,7 @@ in
           docker-credential-helpers
           rclone
           ffmpeg
-          claude-code-npm
+          claude-code
           codex
           gemini-cli
           copilot
@@ -160,6 +160,7 @@ in
           restic
           omni-agent
           changefeed
+          nixx
           ;
       };
   };

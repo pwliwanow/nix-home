@@ -9,12 +9,10 @@
 
     darwin = {
       url = "github:lnl7/nix-darwin/nix-darwin-25.11";
-      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     home-manager = {
       url = "github:nix-community/home-manager/release-25.11";
-      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     flakeUtils.follows = "hotPot/flakeUtils";
@@ -48,8 +46,10 @@
                   copilot
                   opencode
                   determinate-nix
+                  terraform
                   omni-agent
                   changefeed
+                  nixx
                   ;
                 # scala = prev.scala.override {
                 #   jre = prev.jdk8;
