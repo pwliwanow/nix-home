@@ -39,7 +39,6 @@
                   dive
                   docker-credential-helpers
                   deno
-                  claude-code-npm
                   claude-code
                   codex
                   gemini-cli
