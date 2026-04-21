@@ -6,11 +6,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1776388960,
-        "narHash": "sha256-n1HMfrMVtYzQI10FYvkLSdd7ajt/HJfmYq9tcQ1XnOY=",
+        "lastModified": 1776724344,
+        "narHash": "sha256-TJTy17LDX0KJBhlRRCTFl7ublGI4zHGNl4wh+sMDjL0=",
         "owner": "cutity",
         "repo": "codex",
-        "rev": "211715c2074f6a3198205ed3f4d11b262d12b865",
+        "rev": "414ca8a389a8c2cb796c08d5bd3364a81d48946c",
         "type": "github"
       },
       "original": {
@@ -273,11 +273,11 @@
         "wok": "wok"
       },
       "locked": {
-        "lastModified": 1776566134,
-        "narHash": "sha256-MwbjNBokzL0B3jTwB/f6nY5PMwVlTE7FxVzfPTJOPLI=",
+        "lastModified": 1776728805,
+        "narHash": "sha256-cJ6lBBs2BQZPH2ebsWto7rhJzBz7R3wm8dE6GfMnxhY=",
         "owner": "cutity",
         "repo": "nix-hot-pot",
-        "rev": "3b191f22d16f63723126dd08e6e41962d7ba6915",
+        "rev": "2a3f204bfaa64bff11665233b18c4a792f09bfa4",
         "type": "github"
       },
       "original": {
@@ -526,16 +526,16 @@
         "nixpkgs": "nixpkgs_7"
       },
       "locked": {
-        "lastModified": 1775663426,
-        "narHash": "sha256-ftJCi6C/keNLct84tLjJzrDttKWVs1Q9ey41EIP1qVw=",
+        "lastModified": 1776726946,
+        "narHash": "sha256-XVaASO4iKnNqTZ7Jo4s93Joe4p0DsT7lS9OLxm6wE/w=",
         "owner": "cutity",
         "repo": "opencode",
-        "rev": "641f18a9b8fb7f1de59059049c47aa5714052b51",
+        "rev": "c4c691cd57e42f4c827d2f72db084450ac32004e",
         "type": "github"
       },
       "original": {
         "owner": "cutity",
-        "ref": "release/1.4.0",
+        "ref": "release/1.14.19",
         "repo": "opencode",
         "type": "github"
       }
