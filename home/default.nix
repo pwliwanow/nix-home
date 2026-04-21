@@ -27,7 +27,8 @@ let
       "mkdir" "mkfifo" "mktemp" "nice" "nl" "nohup" "od" "paste"
       "pr" "printenv" "printf" "pwd" "readlink" "realpath" "rm"
       "rmdir" "seq" "sleep" "sort" "split" "sync" "tail" "tee"
-      "test" "[" "touch" "tr" "true" "truncate" "tsort" "tty"
+      # Keep macOS `test` to avoid colliding with packages that ship `bin/test`.
+      "[" "touch" "tr" "true" "truncate" "tsort" "tty"
       "uname" "unexpand" "uniq" "unlink" "wc" "yes"
     ];
     include = gnu-only ++ gnu-preferred;
