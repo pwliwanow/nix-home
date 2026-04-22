@@ -6,11 +6,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1776724344,
-        "narHash": "sha256-TJTy17LDX0KJBhlRRCTFl7ublGI4zHGNl4wh+sMDjL0=",
+        "lastModified": 1776740057,
+        "narHash": "sha256-A28pz+8ftG2uY3IfaPoTOB6OrQbb9F5v4eKgRP79ZHI=",
         "owner": "cutity",
         "repo": "codex",
-        "rev": "414ca8a389a8c2cb796c08d5bd3364a81d48946c",
+        "rev": "96d1e3dce48def3f77e1c2a5763f3e0be694ea9c",
         "type": "github"
       },
       "original": {
@@ -273,11 +273,11 @@
         "wok": "wok"
       },
       "locked": {
-        "lastModified": 1776728805,
-        "narHash": "sha256-cJ6lBBs2BQZPH2ebsWto7rhJzBz7R3wm8dE6GfMnxhY=",
+        "lastModified": 1776898952,
+        "narHash": "sha256-7DXgpZkbVJZjRloZdiq4PfPU3TsCoT8vM44Yns8TXUY=",
         "owner": "cutity",
         "repo": "nix-hot-pot",
-        "rev": "2a3f204bfaa64bff11665233b18c4a792f09bfa4",
+        "rev": "594ba455dd6368ae3691b3e0ec715534dcab8bc2",
         "type": "github"
       },
       "original": {
