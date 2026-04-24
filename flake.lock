@@ -273,11 +273,11 @@
         "wok": "wok"
       },
       "locked": {
-        "lastModified": 1776980979,
-        "narHash": "sha256-0EWAuWHporUfatdKEPAfcekZ8kQa5KHOI5wZrpSHBRA=",
+        "lastModified": 1777060764,
+        "narHash": "sha256-duGk1X8QFgg0pg5QhSyF5Eu0SgTUoqq/CdYtb2vwcbs=",
         "owner": "cutity",
         "repo": "nix-hot-pot",
-        "rev": "6af823cea59314b23b010586bfeb673e0f111943",
+        "rev": "61c91c3a5f42f66103838c1df725ea80fab67143",
         "type": "github"
       },
       "original": {
