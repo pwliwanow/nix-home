@@ -273,11 +273,11 @@
         "wok": "wok"
       },
       "locked": {
-        "lastModified": 1777329014,
-        "narHash": "sha256-xZuyG35q5AaIJq8FFWdMIWay9JFNe62cS3Wr4UC5iB4=",
+        "lastModified": 1777330068,
+        "narHash": "sha256-dtWP87tz4wO0xUcor/1v5cY0qVTqCMnEzl8I6V5sB24=",
         "owner": "cutity",
         "repo": "nix-hot-pot",
-        "rev": "36cb169d97f9999ae1c05af542f9058ef8b80060",
+        "rev": "395ca7e1cf478397bafb953e644c1bbc32dba1f8",
         "type": "github"
       },
       "original": {
@@ -698,11 +698,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1777326937,
-        "narHash": "sha256-FPdwEYwX+pTydLurdELg2BcYXmkfbEfGxQCACT8mvgM=",
+        "lastModified": 1777329977,
+        "narHash": "sha256-FtEoL4cZxtBgvgY+QYMuBqYdejJX6ZZUpnEZLwSuOlQ=",
         "owner": "cutity",
         "repo": "wok",
-        "rev": "2d78a7f63ed67c4da264cd8f1990fda397c75c5c",
+        "rev": "6b2634407998774f71c6af6ef4af2e7bc57ec443",
         "type": "github"
       },
       "original": {
