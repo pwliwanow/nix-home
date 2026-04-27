@@ -46,7 +46,7 @@
                   opencode
                   determinate-nix
                   terraform
-                  omni-agent
+                  aiag
                   changefeed
                   nixx
                   ;
