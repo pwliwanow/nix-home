@@ -140,6 +140,7 @@ in
           yarn
           skopeo
           dive
+          crane
           terraform
           jq
           amazon-ecr-credential-helper
